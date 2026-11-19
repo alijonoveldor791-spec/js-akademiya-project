@@ -1,0 +1,16 @@
+import fs from 'node:fs';
+import { chromium } from '@playwright/test';
+const localChrome='C:/Program Files/Google/Chrome/Application/chrome.exe';
+const browser=await chromium.launch(fs.existsSync(localChrome)?{executablePath:localChrome,headless:true}:{headless:true});
+fs.mkdirSync('docs/screenshots',{recursive:true});
+const page=await browser.newPage({viewport:{width:1440,height:1000}});
+await page.goto('http://127.0.0.1:54149/#/lesson-03');
+await page.screenshot({path:'docs/screenshots/desktop.png'});
+await page.locator('#runCode').click();await page.locator('#output').getByText('Keyingi yosh:',{exact:false}).waitFor();
+await page.locator('.editor-top').scrollIntoViewIfNeeded();
+await page.screenshot({path:'docs/screenshots/laboratory.png'});
+await page.setViewportSize({width:390,height:844});
+await page.goto('http://127.0.0.1:54149/#/setup-01');await page.evaluate(()=>scrollTo(0,0));
+await page.screenshot({path:'docs/screenshots/mobile.png',animations:'disabled'});
+console.log('desktop.png, laboratory.png, mobile.png captured');
+await browser.close();

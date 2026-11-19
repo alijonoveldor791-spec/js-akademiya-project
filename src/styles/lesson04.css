@@ -1,0 +1,31 @@
+.lesson04 .code-sample,.lesson04 .code-highlight{background:#1e1e1e;color:#d4d4d4}
+.lesson04 .token-keyword{color:#569cd6}
+.lesson04 .token-string{color:#ce9178}
+.lesson04 .token-number{color:#b5cea8}
+.lesson04 .token-variable{color:#9cdcfe}
+.lesson04 .token-function{color:#dcdcaa}
+.lesson04 .token-comment{color:#6a9955}
+.lesson04-reading{line-height:1.85;min-width:0}
+.lesson04-welcome{font-size:22px;font-weight:750}
+.lesson04-reading h3{font-size:22px;line-height:1.4}
+.lesson04-reading h4{font-size:17px;margin:18px 0 12px}
+.lesson04-reading .type-section,.lesson04-reading .reading-section{margin:28px 0;padding:24px}
+.lesson04-reading .type-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(210px,100%),1fr));gap:12px;margin:20px 0}
+.lesson04-reading .type-cards>div{padding:18px;background:var(--panel);border:1px solid var(--border);border-radius:12px;min-width:0}
+.lesson04-reading .type-cards p{margin:10px 0}
+.lesson04-reading .type-cards small{color:var(--muted)}
+.lesson04-example{margin:24px 0;min-width:0}
+.lesson04-example>.code-sample{margin:0;border-radius:0 0 12px 12px}
+.lesson04 .editor-top{flex-wrap:wrap;gap:10px}
+.lesson04 .editor-top>div{flex-wrap:wrap}
+.lesson04-reading .console{display:block;margin-top:8px;min-height:48px}
+.type-experiment{padding:18px;border:1px solid var(--border);border-radius:12px;background:var(--panel);margin:24px 0}
+.type-inputs{display:flex;flex-wrap:wrap;gap:12px}
+.type-inputs label{display:flex;flex:1 1 150px;min-width:0;flex-direction:column;gap:6px;font-size:14px}
+.type-inputs input,.type-inputs select{width:100%;min-width:0;padding:10px;border:1px solid var(--border);border-radius:8px;background:var(--bg);color:var(--fg);font:inherit}
+.lesson04 .type-task{border-top:1px solid var(--border);padding-top:18px;margin-top:22px}
+.lesson04 .quiz-retry{margin-top:16px}
+.lesson04 #concept:empty,.lesson04 #explain:empty{display:none}
+.lesson04 .sidebar-footer{display:none}
+@media(max-width:600px){.lesson04-reading .type-section,.lesson04-reading .reading-section{padding:16px 12px}.lesson04-reading h3{font-size:19px}.type-experiment{padding:12px}.lesson04 .editor-top .ghost-button{padding:8px;font-size:12px}}
+@media(forced-colors:active){.lesson04 .code-editor-shell .editor{color:CanvasText;-webkit-text-fill-color:CanvasText;background:Canvas;caret-color:CanvasText}}

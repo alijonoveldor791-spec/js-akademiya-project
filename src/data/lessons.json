@@ -1,0 +1,1300 @@
+[
+  {
+    "title": "JavaScript nima? Birinchi kod",
+    "concept": "JavaScript veb-sahifaning xatti-harakatini boshqaradi. HTML tuzilish, CSS dizayn, JS esa mantiq va interaktivlikni ta’minlaydi.",
+    "explain": "Brauzer JavaScript kodini bajaradi. `console.log()` qiymatni dasturchi konsoliga chiqaradi; u sahifaga yozuv qo‘shmaydi. Har bir ko‘rsatma ketma-ket bajariladi. Quyidagi kodni ishga tushiring va matnni o‘zgartiring.",
+    "code": "console.log(\"Salom, JavaScript!\");\nconsole.log(\"Mening birinchi dasturim\");",
+    "practice": "Ismingiz va bugungi maqsadingizni alohida ikki qatorga chiqaring.",
+    "home": "Ismingiz va bugungi maqsadingizni alohida ikki qatorga chiqaring.",
+    "check": "console.log(\"Salom\") nima qiladi?",
+    "tip": "F12 → Console brauzer konsolini ochadi; bu darslikdagi «Ishga tushirish» tugmasi ham natijani ko‘rsatadi.",
+    "id": "lesson-01",
+    "number": 1,
+    "week": 1,
+    "durationMinutes": 90,
+    "video": {
+      "title": "",
+      "type": "file",
+      "src": "",
+      "poster": "",
+      "duration": null,
+      "subtitles": [],
+      "transcript": ""
+    },
+    "objectives": [
+      "JavaScript veb-sahifaning xatti-harakatini boshqaradi. HTML tuzilish, CSS dizayn, JS esa mantiq va interaktivlikni ta’minlaydi."
+    ],
+    "estimatedDifficulty": "boshlangich"
+  },
+  {
+    "title": "console.log, alert va prompt",
+    "concept": "Ma’lumot chiqarish va foydalanuvchidan olish: console.log, alert, prompt.",
+    "explain": "`console.log` natijani konsolga yozadi; `alert()` xabar oynasini ochadi; `prompt()` matn kiritishni so‘raydi. Quyidagi darslik muhiti pop-up oynalarni cheklashi mumkin; hozir sinash uchun `console.log` ishlatamiz, brauzerda esa `prompt` ni bevosita tekshirasiz.",
+    "code": "const ism = \"Aziza\";\nconsole.log(\"Salom, \" + ism);\n// Oddiy HTML faylda: alert(\"Salom!\");\n// Oddiy HTML faylda: prompt(\"Ismingiz?\");",
+    "practice": "Brauzer konsolida alert va prompt yordamida foydalanuvchi ismini chiqaruvchi kod yozing.",
+    "home": "Brauzer konsolida alert va prompt yordamida foydalanuvchi ismini chiqaruvchi kod yozing.",
+    "check": "prompt() qaytargan qiymatning turi odatda nima?",
+    "tip": "prompt() odatda string yoki Cancel bosilganda null qaytaradi.",
+    "id": "lesson-02",
+    "number": 2,
+    "week": 1,
+    "durationMinutes": 90,
+    "video": {
+      "title": "",
+      "type": "file",
+      "src": "",
+      "poster": "",
+      "duration": null,
+      "subtitles": [],
+      "transcript": ""
+    },
+    "objectives": [
+      "Ma’lumot chiqarish va foydalanuvchidan olish: console.log, alert, prompt."
+    ],
+    "estimatedDifficulty": "boshlangich"
+  },
+  {
+    "title": "let, const va o‘zgaruvchilar",
+    "concept": "O‘zgaruvchi nomlangan qiymatni saqlaydi. let qayta tayinlanadi, const esa qayta tayinlanmaydi.",
+    "explain": "Nomlar mazmunli bo‘lsin: `yosh`, `narx`, `natija`. `const` bilan e’lon qilingan sonni boshqa songa qayta tenglashtirib bo‘lmaydi. JS katta-kichik harfni farqlaydi (`yosh` va `Yosh` boshqa).",
+    "code": "let yosh = 15;\nconst ism = \"Ali\";\nconsole.log(ism, yosh);\nyosh = yosh + 1;\nconsole.log(\"Keyingi yosh:\", yosh);",
+    "practice": "Ism, sinf va yosh uchun o‘zgaruvchilar yarating; yoshni 2 ga oshiring.",
+    "home": "Ism, sinf va yosh uchun o‘zgaruvchilar yarating; yoshni 2 ga oshiring.",
+    "check": "let va const ning eng muhim farqi nima?",
+    "tip": "",
+    "id": "lesson-03",
+    "number": 3,
+    "week": 1,
+    "durationMinutes": 90,
+    "video": {
+      "title": "",
+      "type": "file",
+      "src": "",
+      "poster": "",
+      "duration": null,
+      "subtitles": [],
+      "transcript": ""
+    },
+    "objectives": [
+      "O‘zgaruvchi nomlangan qiymatni saqlaydi. let qayta tayinlanadi, const esa qayta tayinlanmaydi."
+    ],
+    "estimatedDifficulty": "boshlangich"
+  },
+  {
+    "title": "String, Number, Boolean, null",
+    "concept": "JavaScriptdagi ma'lumot turlari: matn (string), son (number), mantiqiy (boolean), bo'sh (null) va aniqlanmagan (undefined).",
+    "explain": "Nega turlar kerak? Anketa misoli: Ism (matn), yosh (son), talabamisiz (ha/yo'q), telefon hali yo'q (bo'sh). Kompyuter har birini turiga qarab turlicha ishlaydi. String: 'Salom', 'Ali'. 'Salom, ' + 'Ali' = 'Salom, Ali'. 'Informatika'.length = 11. Qo'shtirnoq ichidagi hamma narsa matn. Number: Butun va o'nli sonlar (25, 3.14). Amallar: + - * / %. Maxsus: Infinity, NaN (turi number). Boolean: true va false. 5 > 3 = true. null va undefined: undefined - o'zgaruvchi e'lon qilingan, lekin qiymat yo'q; null - dasturchi ataylab qo'ygan 'bo'sh' qiymat. typeof: '5'->string; 5->number; true->boolean; undefined->undefined; null->object. Matn va son: '5' + 2 = '52' (matn birlashdi), 5 + 2 = 7. Forma qiymati HAR DOIM matn, hisoblash uchun Number() kerak. Mini-test: 1. typeof '42' (string), 2. '7'+3 ('73'), 3. typeof null ('object'), 4. undefined vs null (e'lon qilingan vs bo'sh), 5. Boolean qiymat (true).",
+    "code": "let ism = \"Aziz\";\nlet yosh = 16;\nlet oquvchi = true;\nlet telefon = null;\nlet manzil;\n\nconsole.log(typeof ism);\nconsole.log(typeof yosh);\nconsole.log(typeof oquvchi);\nconsole.log(typeof telefon);\nconsole.log(typeof manzil);",
+    "practice": "Oson: 5 ta qiymatni typeof bilan tekshiring ('Salom', 42, 3.14, false, undefined). O'rta: O'zingiz haqingizda 4 ta o'zgaruvchi yarating (ism, yosh, talabami, telefon) va typeof natijalarini chiqaring. Murakkab: 'Savatcha hisobi'. Narx '12000', soni 3. narx+soni natijasini tushuntiring, Number(narx)*soni bilan hisoblang.",
+    "home": "1. Do'kon mahsuloti (nom, narx, mavjud, chegirma=null) uchun o'zgaruvchilar yarating. 2. 5 ta ifoda natijasini taxmin qiling va tekshiring: '10'+5, '10'-5, '10'*'2', true+1, 'salom'*2. 3. Jadvalni to'ldiring: 'true', true, 0, '0', null, undefined.",
+    "check": "typeof '15' qanday natija beradi?",
+    "tip": "Xatolar laboratoriyasi: Xato kodi: let ball = '95'; console.log(ball + 5); Natija: 955. Yordam: typeof ball ni chiqaring. Tuzatilgan kod: console.log(Number(ball) + 5); Natija: 100. Saboq: Natijani doim oldindan taxmin qiling.",
+    "id": "lesson-04",
+    "number": 4,
+    "week": 1,
+    "durationMinutes": 90,
+    "video": {
+      "title": "",
+      "type": "file",
+      "src": "",
+      "poster": "",
+      "duration": null,
+      "subtitles": [],
+      "transcript": ""
+    },
+    "objectives": [
+      "String, Number, Boolean, null va undefined ning har biriga o'zim misol keltira olaman.",
+      "typeof yordamida qiymat turini aniqlab, natijani oldindan ayta olaman.",
+      "'5' + 2 va 5 + 2 natijalari nega farq qilishini tushuntira olaman."
+    ],
+    "estimatedDifficulty": "boshlangich"
+  },
+  {
+    "title": "Arifmetik operatorlar",
+    "concept": "+, -, *, /, %, ** operatorlari bilan hisoblaymiz.",
+    "explain": "`%` bo‘lishdan qolgan qoldiqni beradi; `**` darajaga oshiradi. Matematik ifodalarda qavs ustuvorlikni boshqaradi. `10 / 4` JavaScriptda 2.5 bo‘ladi.",
+    "code": "let a = 10, b = 4;\nconsole.log(\"yig‘indi\", a+b);\nconsole.log(\"qoldiq\", a%b);\nconsole.log(\"daraja\", a**2);\nconsole.log(\"bo‘linma\", a/b);",
+    "practice": "Tomoni a=7 bo‘lgan kvadratning perimetri va yuzini hisoblang.",
+    "home": "Tomoni a=7 bo‘lgan kvadratning perimetri va yuzini hisoblang.",
+    "check": "7 % 3 natijasi nechchi?",
+    "tip": "",
+    "id": "lesson-05",
+    "number": 5,
+    "week": 2,
+    "durationMinutes": 90,
+    "video": {
+      "title": "",
+      "type": "file",
+      "src": "",
+      "poster": "",
+      "duration": null,
+      "subtitles": [],
+      "transcript": ""
+    },
+    "objectives": [
+      "+, -, *, /, %, ** operatorlari bilan hisoblaymiz."
+    ],
+    "estimatedDifficulty": "boshlangich"
+  },
+  {
+    "title": "Kiritilgan matnni songa aylantirish",
+    "concept": "prompt ma’lumoti matn bo‘ladi; hisoblashda Number(), parseInt(), parseFloat() ishlatiladi.",
+    "explain": "`\"2\" + \"3\"` natijasi `\"23\"`, `Number(\"2\") + Number(\"3\")` esa 5. Noto‘g‘ri kiritma `NaN` bo‘lishi mumkin. `Number.isNaN()` bilan tekshirishni ham mashq qiling.",
+    "code": "let a = \"12\";\nlet b = \"8\";\nconsole.log(a + b);\nconsole.log(Number(a) + Number(b));\nconsole.log(Number(\"salom\"));",
+    "practice": "Prompt yordamida ikki son kiritib yig‘indini hisoblaydigan kod yozing.",
+    "home": "Prompt yordamida ikki son kiritib yig‘indini hisoblaydigan kod yozing.",
+    "check": "Nima uchun Number(prompt(...)) zarur?",
+    "tip": "",
+    "id": "lesson-06",
+    "number": 6,
+    "week": 2,
+    "durationMinutes": 90,
+    "video": {
+      "title": "",
+      "type": "file",
+      "src": "",
+      "poster": "",
+      "duration": null,
+      "subtitles": [],
+      "transcript": ""
+    },
+    "objectives": [
+      "prompt ma’lumoti matn bo‘ladi; hisoblashda Number(), parseInt(), parseFloat() ishlatiladi."
+    ],
+    "estimatedDifficulty": "boshlangich"
+  },
+  {
+    "title": "Math kutubxonasi",
+    "concept": "Math.PI, Math.sqrt(), Math.pow(), Math.round(), Math.floor(), Math.random() kabi vositalar.",
+    "explain": "`Math.sqrt(x)` kvadrat ildiz, `Math.abs(x)` modul, `Math.round(x)` yaxlitlaydi. Aylana yuzasi `πr²` formula bilan topiladi. Sonlar chegarasi va aniqligini kuzating.",
+    "code": "const r = 5;\nconst s = Math.PI * r ** 2;\nconsole.log(s.toFixed(2));\nconsole.log(Math.sqrt(81));\nconsole.log(Math.round(4.7));",
+    "practice": "Radius berilganda aylana uzunligi va yuzini hisoblang; natijani 2 xona bilan chiqaring.",
+    "home": "Radius berilganda aylana uzunligi va yuzini hisoblang; natijani 2 xona bilan chiqaring.",
+    "check": "Math.sqrt(49) nima beradi?",
+    "tip": "",
+    "id": "lesson-07",
+    "number": 7,
+    "week": 2,
+    "durationMinutes": 90,
+    "video": {
+      "title": "",
+      "type": "file",
+      "src": "",
+      "poster": "",
+      "duration": null,
+      "subtitles": [],
+      "transcript": ""
+    },
+    "objectives": [
+      "Math.PI, Math.sqrt(), Math.pow(), Math.round(), Math.floor(), Math.random() kabi vositalar."
+    ],
+    "estimatedDifficulty": "boshlangich"
+  },
+  {
+    "title": "Son raqamlariga ajratish",
+    "concept": "Math.floor() va % yordamida sonning birlik, o‘nlik va yuzlik raqamlarini topish mumkin.",
+    "explain": "Masalan, 347 sonining birlik raqami `347 % 10 = 7`. O‘nlik raqami `Math.floor(347 / 10) % 10 = 4`. Bir necha amal yordamida butun sonni raqamlarga ajratamiz.",
+    "code": "let son = 347;\nlet birlik = son % 10;\nlet onlik = Math.floor(son/10) % 10;\nlet yuzlik = Math.floor(son/100);\nconsole.log(yuzlik, onlik, birlik);\nconsole.log(\"Yig‘indi:\", yuzlik+onlik+birlik);",
+    "practice": "Istalgan uch xonali son raqamlari yig‘indisi va teskari yozilishini hisoblang.",
+    "home": "Istalgan uch xonali son raqamlari yig‘indisi va teskari yozilishini hisoblang.",
+    "check": "258 sonining o‘nlik raqami nechchi?",
+    "tip": "",
+    "id": "lesson-08",
+    "number": 8,
+    "week": 2,
+    "durationMinutes": 90,
+    "video": {
+      "title": "",
+      "type": "file",
+      "src": "",
+      "poster": "",
+      "duration": null,
+      "subtitles": [],
+      "transcript": ""
+    },
+    "objectives": [
+      "Math.floor() va % yordamida sonning birlik, o‘nlik va yuzlik raqamlarini topish mumkin."
+    ],
+    "estimatedDifficulty": "boshlangich"
+  },
+  {
+    "title": "Taqqoslash va mantiqiy operatorlar",
+    "concept": ">, <, >=, <=, ===, !==; &&, ||, ! orqali true/false olamiz.",
+    "explain": "`===` qiymat va tur tengligini tekshiradi, `==` esa tur o‘zgartirib solishtirishi mumkin; odatda `===` tavsiya etiladi. `&&` — va, `||` — yoki, `!` — inkor.",
+    "code": "let yosh = 17;\nlet ruxsat = yosh >= 16 && yosh < 60;\nconsole.log(\"Ruxsat:\", ruxsat);\nconsole.log(5 === \"5\");\nconsole.log(!false);",
+    "practice": "Son musbat va juft ekanini bir ifodada aniqlang.",
+    "home": "Son musbat va juft ekanini bir ifodada aniqlang.",
+    "check": "5 === \"5\" ning natijasi nima?",
+    "tip": "",
+    "id": "lesson-09",
+    "number": 9,
+    "week": 3,
+    "durationMinutes": 90,
+    "video": {
+      "title": "",
+      "type": "file",
+      "src": "",
+      "poster": "",
+      "duration": null,
+      "subtitles": [],
+      "transcript": ""
+    },
+    "objectives": [
+      ">, <, >=, <=, ===, !==; &&, ||, ! orqali true/false olamiz."
+    ],
+    "estimatedDifficulty": "boshlangich"
+  },
+  {
+    "title": "if va else",
+    "concept": "if shart rost bo‘lsa bir blok, else aks holda boshqa blokni bajaradi.",
+    "explain": "Shart qavs ichida, blok `{}` ichida yoziladi. `else if` qo‘shimcha shartlarni tekshiradi. Joy tashlash (indent) kodni o‘qishni osonlashtiradi.",
+    "code": "let ball = 73;\nif (ball >= 60) {\n  console.log(\"O‘tdi\");\n} else {\n  console.log(\"Qayta urinadi\");\n}",
+    "practice": "Kiritilgan son juft yoki toqligini chiqaruvchi dastur yozing.",
+    "home": "Kiritilgan son juft yoki toqligini chiqaruvchi dastur yozing.",
+    "check": "if (false) bo‘lsa qaysi blok bajariladi?",
+    "tip": "",
+    "id": "lesson-10",
+    "number": 10,
+    "week": 3,
+    "durationMinutes": 90,
+    "video": {
+      "title": "",
+      "type": "file",
+      "src": "",
+      "poster": "",
+      "duration": null,
+      "subtitles": [],
+      "transcript": ""
+    },
+    "objectives": [
+      "if shart rost bo‘lsa bir blok, else aks holda boshqa blokni bajaradi."
+    ],
+    "estimatedDifficulty": "boshlangich"
+  },
+  {
+    "title": "Ternary operator va murakkab shart",
+    "concept": "Qisqa tanlash: shart ? rostQiymat : yolgonQiymat.",
+    "explain": "Ternary oddiy ikki yo‘lli tanlash uchun foydali. Ko‘p ichma-ich ternary kodni qiyinlashtiradi; murakkab qarorlarda `if/else` ishlating.",
+    "code": "let a=12, b=8, c=15;\nlet katta = Math.max(a,b,c);\nlet juftlik = a % 2 === 0 ? \"juft\" : \"toq\";\nconsole.log(katta, juftlik);",
+    "practice": "Uch sondan eng kattasini `Math.max` ishlatmasdan toping.",
+    "home": "Uch sondan eng kattasini `Math.max` ishlatmasdan toping.",
+    "check": "Ternary qaysi vaziyatda qulay?",
+    "tip": "",
+    "id": "lesson-11",
+    "number": 11,
+    "week": 3,
+    "durationMinutes": 90,
+    "video": {
+      "title": "",
+      "type": "file",
+      "src": "",
+      "poster": "",
+      "duration": null,
+      "subtitles": [],
+      "transcript": ""
+    },
+    "objectives": [
+      "Qisqa tanlash: shart ? rostQiymat : yolgonQiymat."
+    ],
+    "estimatedDifficulty": "boshlangich"
+  },
+  {
+    "title": "switch operatori",
+    "concept": "switch bitta qiymatni case holatlari bilan taqqoslaydi.",
+    "explain": "`break` mos `case`dan keyin boshqa holatlarni bajarmaslikka yordam beradi. `default` hech bir holat mos kelmasa ishlaydi. `switch` qat’iy (strict) moslashtiradi.",
+    "code": "let kun = 3;\nswitch(kun) {\n case 1: console.log(\"Dushanba\"); break;\n case 2: console.log(\"Seshanba\"); break;\n case 3: console.log(\"Chorshanba\"); break;\n default: console.log(\"Noma’lum kun\");\n}",
+    "practice": "1–7 raqamiga qarab hafta kunini ko‘rsating.",
+    "home": "1–7 raqamiga qarab hafta kunini ko‘rsating.",
+    "check": "switch da break nima uchun kerak?",
+    "tip": "",
+    "id": "lesson-12",
+    "number": 12,
+    "week": 3,
+    "durationMinutes": 90,
+    "video": {
+      "title": "",
+      "type": "file",
+      "src": "",
+      "poster": "",
+      "duration": null,
+      "subtitles": [],
+      "transcript": ""
+    },
+    "objectives": [
+      "switch bitta qiymatni case holatlari bilan taqqoslaydi."
+    ],
+    "estimatedDifficulty": "boshlangich"
+  },
+  {
+    "title": "for sikliga kirish",
+    "concept": "Bir ishni belgilangan marta bajarish: for (boshlanish; shart; qadam).",
+    "explain": "`i` takrorlash hisoblagichi. Avval boshlang‘ich qiymat beriladi, har iteratsiyadan oldin shart tekshiriladi, yakunda qadam bajariladi. Chegara xatolariga (`<` va `<=`) e’tibor bering.",
+    "code": "for (let i=1; i<=10; i++) {\n  console.log(i);\n}",
+    "practice": "1 dan 50 gacha faqat juft sonlarni chiqaruvchi dastur yozing.",
+    "home": "1 dan 50 gacha faqat juft sonlarni chiqaruvchi dastur yozing.",
+    "check": "for (let i=1;i<=3;i++) necha marta ishlaydi?",
+    "tip": "",
+    "id": "lesson-13",
+    "number": 13,
+    "week": 4,
+    "durationMinutes": 90,
+    "video": {
+      "title": "",
+      "type": "file",
+      "src": "",
+      "poster": "",
+      "duration": null,
+      "subtitles": [],
+      "transcript": ""
+    },
+    "objectives": [
+      "Bir ishni belgilangan marta bajarish: for (boshlanish; shart; qadam)."
+    ],
+    "estimatedDifficulty": "boshlangich"
+  },
+  {
+    "title": "for: yig‘indi va faktorial",
+    "concept": "Sikl davomida qiymatni yig‘ish uchun akkumulyator ishlatiladi.",
+    "explain": "Yig‘indi 0 dan, ko‘paytma 1 dan boshlanadi. Masalan, `5! = 1×2×3×4×5 = 120`. Son oshgan sari faktorial juda katta bo‘ladi.",
+    "code": "let n=5, yigindi=0, faktorial=1;\nfor (let i=1; i<=n; i++) {\n yigindi += i;\n faktorial *= i;\n}\nconsole.log(yigindi, faktorial);",
+    "practice": "1 dan N gacha toq sonlar yig‘indisini hisoblang.",
+    "home": "1 dan N gacha toq sonlar yig‘indisini hisoblang.",
+    "check": "Faktorial hisoblagichi nima uchun 1 dan boshlanadi?",
+    "tip": "",
+    "id": "lesson-14",
+    "number": 14,
+    "week": 4,
+    "durationMinutes": 90,
+    "video": {
+      "title": "",
+      "type": "file",
+      "src": "",
+      "poster": "",
+      "duration": null,
+      "subtitles": [],
+      "transcript": ""
+    },
+    "objectives": [
+      "Sikl davomida qiymatni yig‘ish uchun akkumulyator ishlatiladi."
+    ],
+    "estimatedDifficulty": "boshlangich"
+  },
+  {
+    "title": "while va do...while",
+    "concept": "while avval shartni tekshiradi; do...while kamida bir marta bajariladi.",
+    "explain": "Takrorlanishlar soni oldindan noma’lum bo‘lsa while qulay. Shartni o‘zgartiruvchi amal bo‘lmasa, cheksiz sikl yuzaga kelishi mumkin.",
+    "code": "let n=12345;\nwhile (n>0) {\n console.log(n%10);\n n=Math.floor(n/10);\n}\nlet x=0;\ndo { x++; } while (x<2);\nconsole.log(\"x:\",x);",
+    "practice": "Berilgan musbat son nechta raqamdan iboratligini while bilan toping.",
+    "home": "Berilgan musbat son nechta raqamdan iboratligini while bilan toping.",
+    "check": "do...while ning while dan asosiy farqi nima?",
+    "tip": "",
+    "id": "lesson-15",
+    "number": 15,
+    "week": 4,
+    "durationMinutes": 90,
+    "video": {
+      "title": "",
+      "type": "file",
+      "src": "",
+      "poster": "",
+      "duration": null,
+      "subtitles": [],
+      "transcript": ""
+    },
+    "objectives": [
+      "while avval shartni tekshiradi; do...while kamida bir marta bajariladi."
+    ],
+    "estimatedDifficulty": "boshlangich"
+  },
+  {
+    "title": "break, continue va ichma-ich sikl",
+    "concept": "break siklni tugatadi, continue navbatdagi iteratsiyaga o‘tadi.",
+    "explain": "Ichma-ich siklda tashqi siklning har bir qadami uchun ichki sikl qayta ishlaydi. Ko‘paytirish jadvali va katakli strukturalar uchun qulay.",
+    "code": "for (let i=1;i<=3;i++) {\n for (let j=1;j<=3;j++) {\n  console.log(`${i} × ${j} = ${i*j}`);\n }\n}\nfor(let i=1;i<=5;i++) {\n if(i===3) continue;\n console.log(i);\n}",
+    "practice": "1–9 ko‘paytirish jadvalini ikki sikl bilan hosil qiling.",
+    "home": "1–9 ko‘paytirish jadvalini ikki sikl bilan hosil qiling.",
+    "check": "continue shu iteratsiyada nimani o‘zgartiradi?",
+    "tip": "",
+    "id": "lesson-16",
+    "number": 16,
+    "week": 4,
+    "durationMinutes": 90,
+    "video": {
+      "title": "",
+      "type": "file",
+      "src": "",
+      "poster": "",
+      "duration": null,
+      "subtitles": [],
+      "transcript": ""
+    },
+    "objectives": [
+      "break siklni tugatadi, continue navbatdagi iteratsiyaga o‘tadi."
+    ],
+    "estimatedDifficulty": "boshlangich"
+  },
+  {
+    "title": "function, parametr, return",
+    "concept": "Funksiya — qayta ishlatiladigan kod bo‘lagi. Parametr kirish ma’lumoti, return qaytadigan natija.",
+    "explain": "`return` funksiya ishini yakunlaydi va natijani chaqirgan joyga uzatadi. Konsolga yozish (`console.log`) bilan qiymat qaytarish (`return`) bir xil emas.",
+    "code": "function kvadrat(x) {\n return x*x;\n}\nconsole.log(kvadrat(4));\nconsole.log(kvadrat(9));",
+    "practice": "Ikkita sonning kattasini qaytaradigan `katta(a,b)` funksiyasini yozing.",
+    "home": "Ikkita sonning kattasini qaytaradigan `katta(a,b)` funksiyasini yozing.",
+    "check": "return nima vazifa bajaradi?",
+    "tip": "",
+    "id": "lesson-17",
+    "number": 17,
+    "week": 5,
+    "durationMinutes": 90,
+    "video": {
+      "title": "",
+      "type": "file",
+      "src": "",
+      "poster": "",
+      "duration": null,
+      "subtitles": [],
+      "transcript": ""
+    },
+    "objectives": [
+      "Funksiya — qayta ishlatiladigan kod bo‘lagi. Parametr kirish ma’lumoti, return qaytadigan natija."
+    ],
+    "estimatedDifficulty": "orta"
+  },
+  {
+    "title": "Arrow function va scope",
+    "concept": "Arrow funksiya qisqa yozuv: (x) => x*x. Scope o‘zgaruvchining ko‘rinish doirasi.",
+    "explain": "`let` va `const` blok doirasida ishlaydi. Arrow funksiyalarda `this` odatiy funksiyalardan farq qiladi; hozircha oddiy hisoblashlarda foydalaning.",
+    "code": "const ikkiBaravar = x => x * 2;\nconst qushish = (a,b) => a+b;\nconsole.log(ikkiBaravar(6));\nconsole.log(qushish(3,7));\n{\n let maxfiy = \"blok ichida\";\n console.log(maxfiy);\n}",
+    "practice": "Haroratni Selsiydan Farengeytga aylantiruvchi arrow funksiya yozing.",
+    "home": "Haroratni Selsiydan Farengeytga aylantiruvchi arrow funksiya yozing.",
+    "check": "Blok ichidagi let tashqarida ko‘rinadimi?",
+    "tip": "",
+    "id": "lesson-18",
+    "number": 18,
+    "week": 5,
+    "durationMinutes": 90,
+    "video": {
+      "title": "",
+      "type": "file",
+      "src": "",
+      "poster": "",
+      "duration": null,
+      "subtitles": [],
+      "transcript": ""
+    },
+    "objectives": [
+      "Arrow funksiya qisqa yozuv: (x) => x*x. Scope o‘zgaruvchining ko‘rinish doirasi."
+    ],
+    "estimatedDifficulty": "orta"
+  },
+  {
+    "title": "Array asoslari",
+    "concept": "Massiv bir nechta qiymatni tartib bilan saqlaydi; indeks 0 dan boshlanadi.",
+    "explain": "`push` oxiriga qo‘shadi, `pop` oxirgisini olib tashlaydi. `length` elementlar sonini bildiradi. Mavjud bo‘lmagan indeks `undefined` qaytaradi.",
+    "code": "let baholar=[5,4,5,3];\nconsole.log(baholar[0]);\nbaholar.push(4);\nconsole.log(baholar.length);\nconsole.log(baholar);",
+    "practice": "5 o‘quvchining bahosini massivga yozing, eng so‘nggi bahoni chiqarib oling.",
+    "home": "5 o‘quvchining bahosini massivga yozing, eng so‘nggi bahoni chiqarib oling.",
+    "check": "Massivdagi birinchi elementning indeksi nima?",
+    "tip": "",
+    "id": "lesson-19",
+    "number": 19,
+    "week": 5,
+    "durationMinutes": 90,
+    "video": {
+      "title": "",
+      "type": "file",
+      "src": "",
+      "poster": "",
+      "duration": null,
+      "subtitles": [],
+      "transcript": ""
+    },
+    "objectives": [
+      "Massiv bir nechta qiymatni tartib bilan saqlaydi; indeks 0 dan boshlanadi."
+    ],
+    "estimatedDifficulty": "orta"
+  },
+  {
+    "title": "Massiv va sikllar",
+    "concept": "Massivning barcha elementlarini for yoki for...of yordamida ko‘rish mumkin.",
+    "explain": "Sonli ma’lumotlarda yig‘indi, minimum, maksimum va o‘rtacha qiymatni hisoblash mumkin. Bo‘sh massivda o‘rtacha qiymatni tekshirmasdan hisoblamang.",
+    "code": "const baholar=[4,5,3,5,4];\nlet jami=0;\nfor(const ball of baholar) {\n jami += ball;\n}\nconsole.log(\"O‘rtacha:\",jami/baholar.length);\nconsole.log(\"Eng katta:\",Math.max(...baholar));",
+    "practice": "Massivda nechta 5 baho borligini va o‘rtacha bahoni hisoblang.",
+    "home": "Massivda nechta 5 baho borligini va o‘rtacha bahoni hisoblang.",
+    "check": "for...of nimani birma-bir beradi?",
+    "tip": "",
+    "id": "lesson-20",
+    "number": 20,
+    "week": 5,
+    "durationMinutes": 90,
+    "video": {
+      "title": "",
+      "type": "file",
+      "src": "",
+      "poster": "",
+      "duration": null,
+      "subtitles": [],
+      "transcript": ""
+    },
+    "objectives": [
+      "Massivning barcha elementlarini for yoki for...of yordamida ko‘rish mumkin."
+    ],
+    "estimatedDifficulty": "orta"
+  },
+  {
+    "title": "map, filter, find, reduce",
+    "concept": "Massiv metodlari yangi natijalar yaratish va qidirish uchun ishlatiladi.",
+    "explain": "`map` har bir elementni o‘zgartiradi; `filter` shartga moslarini ajratadi; `find` birinchi mos elementni topadi; `reduce` yig‘ma natija hisoblaydi.",
+    "code": "const sonlar=[1,2,3,4,5];\nconsole.log(sonlar.map(x=>x*x));\nconsole.log(sonlar.filter(x=>x%2===0));\nconsole.log(sonlar.find(x=>x>3));\nconsole.log(sonlar.reduce((sum,x)=>sum+x,0));",
+    "practice": "Baholar massivida 4 dan yuqorilarni ajrating va o‘rtacha ballni hisoblang.",
+    "home": "Baholar massivida 4 dan yuqorilarni ajrating va o‘rtacha ballni hisoblang.",
+    "check": "filter va find orasida qanday farq bor?",
+    "tip": "",
+    "id": "lesson-21",
+    "number": 21,
+    "week": 6,
+    "durationMinutes": 90,
+    "video": {
+      "title": "",
+      "type": "file",
+      "src": "",
+      "poster": "",
+      "duration": null,
+      "subtitles": [],
+      "transcript": ""
+    },
+    "objectives": [
+      "Massiv metodlari yangi natijalar yaratish va qidirish uchun ishlatiladi."
+    ],
+    "estimatedDifficulty": "orta"
+  },
+  {
+    "title": "String metodlari",
+    "concept": "Matn — belgilar ketma-ketligi. length, trim, toLowerCase, includes, slice, split metodlari.",
+    "explain": "Matn indekslari 0 dan boshlanadi. `trim` chetdagi bo‘sh joylarni olib tashlaydi; `includes` qidiradi. Matnni o‘zgartirish metodlari ko‘pincha yangi string qaytaradi.",
+    "code": "let s=\"  JavaScript Darslari  \";\nconsole.log(s.trim());\nconsole.log(s.toLowerCase());\nconsole.log(s.includes(\"Script\"));\nconsole.log(s.trim().split(\" \"));",
+    "practice": "Foydalanuvchi kiritgan gapdagi so‘zlar sonini toping.",
+    "home": "Foydalanuvchi kiritgan gapdagi so‘zlar sonini toping.",
+    "check": "trim() nima qiladi?",
+    "tip": "",
+    "id": "lesson-22",
+    "number": 22,
+    "week": 6,
+    "durationMinutes": 90,
+    "video": {
+      "title": "",
+      "type": "file",
+      "src": "",
+      "poster": "",
+      "duration": null,
+      "subtitles": [],
+      "transcript": ""
+    },
+    "objectives": [
+      "Matn — belgilar ketma-ketligi. length, trim, toLowerCase, includes, slice, split metodlari."
+    ],
+    "estimatedDifficulty": "orta"
+  },
+  {
+    "title": "Object: xususiyatlar va metodlar",
+    "concept": "Object kalit-qiymat juftliklarini saqlaydi: {ism:\"Ali\", yosh:15}.",
+    "explain": "`obj.ism` va `obj[\"ism\"]` orqali qiymatni olamiz. Real loyihalarda bitta o‘quvchi haqidagi ma’lumotni obyekt sifatida saqlash qulay.",
+    "code": "const oquvchi={ism:\"Ali\", sinf:9, ball:88};\nconsole.log(oquvchi.ism);\noquvchi.ball = 93;\nconsole.log(oquvchi);\nconsole.log(Object.keys(oquvchi));",
+    "practice": "O‘zingizning `profil` obyektingizni yarating, unda 5 ta xususiyat bo‘lsin.",
+    "home": "O‘zingizning `profil` obyektingizni yarating, unda 5 ta xususiyat bo‘lsin.",
+    "check": "Object massivdan qaysi jihati bilan farq qiladi?",
+    "tip": "",
+    "id": "lesson-23",
+    "number": 23,
+    "week": 6,
+    "durationMinutes": 90,
+    "video": {
+      "title": "",
+      "type": "file",
+      "src": "",
+      "poster": "",
+      "duration": null,
+      "subtitles": [],
+      "transcript": ""
+    },
+    "objectives": [
+      "Object kalit-qiymat juftliklarini saqlaydi: {ism:\"Ali\", yosh:15}."
+    ],
+    "estimatedDifficulty": "orta"
+  },
+  {
+    "title": "Obyektlar massivi va JSON",
+    "concept": "Ko‘p obyektlar massivda saqlanadi; JSON ma’lumotlarni almashish uchun matn formati.",
+    "explain": "`JSON.stringify()` obyektni matnga o‘giradi, `JSON.parse()` JSON matnini qiymatga aylantiradi. JSON ichida funksiya saqlab bo‘lmaydi.",
+    "code": "const sinf=[{ism:\"Ali\",ball:80},{ism:\"Zebo\",ball:95}];\nconsole.log(sinf.filter(x=>x.ball>=90));\nconst matn=JSON.stringify(sinf);\nconsole.log(matn);\nconsole.log(JSON.parse(matn)[0].ism);",
+    "practice": "3 o‘quvchini obyektlar massivida saqlang va 80+ ball olganlarni chiqaring.",
+    "home": "3 o‘quvchini obyektlar massivida saqlang va 80+ ball olganlarni chiqaring.",
+    "check": "JSON.stringify() nima qaytaradi?",
+    "tip": "",
+    "id": "lesson-24",
+    "number": 24,
+    "week": 6,
+    "durationMinutes": 90,
+    "video": {
+      "title": "",
+      "type": "file",
+      "src": "",
+      "poster": "",
+      "duration": null,
+      "subtitles": [],
+      "transcript": ""
+    },
+    "objectives": [
+      "Ko‘p obyektlar massivda saqlanadi; JSON ma’lumotlarni almashish uchun matn formati."
+    ],
+    "estimatedDifficulty": "orta"
+  },
+  {
+    "title": "JavaScriptni HTMLga ulash",
+    "concept": "HTML sahifada <script src=\"script.js\" defer></script> orqali JS kod ulanadi.",
+    "explain": "`defer` HTML o‘qilgandan so‘ng skriptni bajarishga yordam beradi. HTML tuzilish, CSS tashqi ko‘rinish, JS harakatga javob beradi. Bitta HTML faylda `<script>...</script>` ham yozish mumkin.",
+    "code": "// HTML faylda:\n// <button id=\"salom\">Salom</button>\n// <script src=\"script.js\" defer></script>\nconsole.log(\"script.js to‘g‘ri ulandi!\");",
+    "practice": "VS Code’da index.html va script.js yarating; script.js dan xabar chiqaring.",
+    "home": "VS Code’da index.html va script.js yarating; script.js dan xabar chiqaring.",
+    "check": "script tegidagi src nima uchun ishlatiladi?",
+    "tip": "",
+    "id": "lesson-25",
+    "number": 25,
+    "week": 7,
+    "durationMinutes": 90,
+    "video": {
+      "title": "",
+      "type": "file",
+      "src": "",
+      "poster": "",
+      "duration": null,
+      "subtitles": [],
+      "transcript": ""
+    },
+    "objectives": [
+      "HTML sahifada <script src=\"script.js\" defer></script> orqali JS kod ulanadi."
+    ],
+    "estimatedDifficulty": "orta"
+  },
+  {
+    "title": "DOM va querySelector",
+    "concept": "DOM — brauzer yaratgan HTML elementlar daraxti. querySelector elementni CSS selektor orqali topadi.",
+    "explain": "`document.querySelector(\"#sarlavha\")` id bo‘yicha, `.sinfx` class bo‘yicha topadi. `textContent` element matnini xavfsiz o‘zgartiradi. Brauzer DOM mavjud bo‘lgandan keyin kod ishlashi kerak.",
+    "code": "// Bu namuna darslikning alohida DOM maydonida ishlaydi:\nconst p = document.createElement(\"p\");\np.textContent = \"Men JavaScript orqali yaratildim!\";\ndocument.body.append(p);\nconsole.log(\"Element qo‘shildi\");",
+    "practice": "HTMLdagi h1 matnini JavaScript bilan o‘zgartiring.",
+    "home": "Veb-amaliyot: DOM elementini topish va matnini yangilash.",
+    "check": "textContent nimani o‘zgartiradi?",
+    "tip": "",
+    "id": "lesson-26",
+    "number": 26,
+    "week": 7,
+    "durationMinutes": 90,
+    "video": {
+      "title": "",
+      "type": "file",
+      "src": "",
+      "poster": "",
+      "duration": null,
+      "subtitles": [],
+      "transcript": ""
+    },
+    "objectives": [
+      "DOM — brauzer yaratgan HTML elementlar daraxti. querySelector elementni CSS selektor orqali topadi."
+    ],
+    "estimatedDifficulty": "orta"
+  },
+  {
+    "title": "Hodisalar va addEventListener",
+    "concept": "click, input, change, keydown kabi hodisalarga javob beriladi.",
+    "explain": "`element.addEventListener(\"click\", handler)` foydalanuvchi bosganda funksiyani ishga tushiradi. Funksiyani `handler()` deb darhol chaqirib yubormaslikka e’tibor bering.",
+    "code": "const tugma=document.createElement(\"button\");\ntugma.textContent=\"Meni bosing\";\ntugma.addEventListener(\"click\",()=>console.log(\"BOSILDI!\"));\ndocument.body.append(tugma);\nconsole.log(\"Tugmani bosing\");",
+    "practice": "Tugma bosilgan sonini hisoblaydigan HTML + JS sahifa yarating; qo‘shimcha ravishda 2 sonli kalkulyator qo‘shing.",
+    "home": "Veb-amaliyot: tugma hodisasida hisoblagich yaratish.",
+    "check": "addEventListener ga qaysi ikkita asosiy argument beriladi?",
+    "tip": "",
+    "id": "lesson-27",
+    "number": 27,
+    "week": 7,
+    "durationMinutes": 90,
+    "video": {
+      "title": "",
+      "type": "file",
+      "src": "",
+      "poster": "",
+      "duration": null,
+      "subtitles": [],
+      "transcript": ""
+    },
+    "objectives": [
+      "click, input, change, keydown kabi hodisalarga javob beriladi."
+    ],
+    "estimatedDifficulty": "orta"
+  },
+  {
+    "title": "classList va style",
+    "concept": "Elementning ko‘rinishini classList.add/remove/toggle va style orqali o‘zgartiramiz.",
+    "explain": "Dizayn qoidalarini CSS klasslarda saqlash, JSda esa `classList.toggle` ishlatish qulay. Matn va fon kontrasti o‘qish uchun yetarli bo‘lsin.",
+    "code": "const p=document.createElement(\"p\");\np.textContent=\"Rangli yozuv\";\np.style.color=\"royalblue\";\np.style.fontWeight=\"bold\";\ndocument.body.append(p);\nconsole.log(\"Uslub berildi\");",
+    "practice": "Tungi/kunduzgi rejimni tugma orqali almashtiring.",
+    "home": "Veb-amaliyot: HTML CSS klasslariga JS orqali o‘tish.",
+    "check": "toggle() nima qiladi?",
+    "tip": "",
+    "id": "lesson-28",
+    "number": 28,
+    "week": 7,
+    "durationMinutes": 90,
+    "video": {
+      "title": "",
+      "type": "file",
+      "src": "",
+      "poster": "",
+      "duration": null,
+      "subtitles": [],
+      "transcript": ""
+    },
+    "objectives": [
+      "Elementning ko‘rinishini classList.add/remove/toggle va style orqali o‘zgartiramiz."
+    ],
+    "estimatedDifficulty": "orta"
+  },
+  {
+    "title": "Form va input tekshirish",
+    "concept": "Form ma’lumotlarni yuborishdan oldin tekshirish va xatolarni ko‘rsatish uchun ishlatiladi.",
+    "explain": "`submit` hodisasida `event.preventDefault()` odatiy sahifa qayta yuklanishini to‘xtatadi. Kiritilgan qiymatni `trim` qiling, uzunligini va kerakli turini tekshiring.",
+    "code": "const matn=\"  Ali  \";\nconst toza=matn.trim();\nif(toza.length<3) console.log(\"Ism juda qisqa\");\nelse console.log(\"Qabul qilindi:\",toza);",
+    "practice": "Ism (kamida 3 belgi) va yosh (1–120) uchun form validatsiyasi yozing.",
+    "home": "Veb-amaliyot: HTML forma va JS tekshiruvlari.",
+    "check": "preventDefault() nima qiladi?",
+    "tip": "",
+    "id": "lesson-29",
+    "number": 29,
+    "week": 8,
+    "durationMinutes": 90,
+    "video": {
+      "title": "",
+      "type": "file",
+      "src": "",
+      "poster": "",
+      "duration": null,
+      "subtitles": [],
+      "transcript": ""
+    },
+    "objectives": [
+      "Form ma’lumotlarni yuborishdan oldin tekshirish va xatolarni ko‘rsatish uchun ishlatiladi."
+    ],
+    "estimatedDifficulty": "orta"
+  },
+  {
+    "title": "createElement va DOMga qo‘shish",
+    "concept": "Elementlar JS yordamida dinamik yaratiladi: createElement, append, remove.",
+    "explain": "Ma’lumotni xavfsiz chiqarish uchun `textContent` afzal. U foydalanuvchi yozgan matnni HTML sifatida bajarmaydi. Ro‘yxat dasturida har bir vazifa alohida `li` bo‘ladi.",
+    "code": "const ul=document.createElement(\"ul\");\nfor(const fan of [\"Matematika\",\"Informatika\",\"Fizika\"]) {\n const li=document.createElement(\"li\");\n li.textContent=fan;\n ul.append(li);\n}\ndocument.body.append(ul);\nconsole.log(\"Ro‘yxat tayyor\");",
+    "practice": "Inputdagi matndan `li` yaratib ro‘yxatga qo‘shuvchi sahifa yarating.",
+    "home": "Veb-amaliyot: dinamik ro‘yxat elementlari.",
+    "check": "append() vazifasi nima?",
+    "tip": "",
+    "id": "lesson-30",
+    "number": 30,
+    "week": 8,
+    "durationMinutes": 90,
+    "video": {
+      "title": "",
+      "type": "file",
+      "src": "",
+      "poster": "",
+      "duration": null,
+      "subtitles": [],
+      "transcript": ""
+    },
+    "objectives": [
+      "Elementlar JS yordamida dinamik yaratiladi: createElement, append, remove."
+    ],
+    "estimatedDifficulty": "orta"
+  },
+  {
+    "title": "Event delegation",
+    "concept": "Ota elementda bitta hodisa tinglovchisi orqali ichki tugmalar bosilishini boshqarish mumkin.",
+    "explain": "Ko‘p dinamik elementlarda har biriga alohida tinglovchi biriktirish o‘rniga ota elementdan foydalaning. `event.target.closest(\"button\")` mos tugmani topadi.",
+    "code": "const ul=document.createElement(\"ul\");\nul.innerHTML=\"<li>Vazifa <button>O‘chirish</button></li>\";\nul.addEventListener(\"click\",e=>{\n if(e.target.closest(\"button\")) {\n  e.target.closest(\"li\").remove();\n  console.log(\"O‘chirildi\");\n }\n});\ndocument.body.append(ul);",
+    "practice": "Ro‘yxatdagi istalgan vazifani bir xil delegatsiya usulida o‘chiruvchi kod yozing.",
+    "home": "Veb-amaliyot: Todo List o‘chirish tugmalari.",
+    "check": "event.target nimani bildiradi?",
+    "tip": "",
+    "id": "lesson-31",
+    "number": 31,
+    "week": 8,
+    "durationMinutes": 90,
+    "video": {
+      "title": "",
+      "type": "file",
+      "src": "",
+      "poster": "",
+      "duration": null,
+      "subtitles": [],
+      "transcript": ""
+    },
+    "objectives": [
+      "Ota elementda bitta hodisa tinglovchisi orqali ichki tugmalar bosilishini boshqarish mumkin."
+    ],
+    "estimatedDifficulty": "orta"
+  },
+  {
+    "title": "localStorage bilan saqlash",
+    "concept": "localStorage brauzerda kichik hajmdagi ma’lumotni saqlaydi va sahifa yangilansa ham qoladi.",
+    "explain": "localStorage faqat matn saqlaydi: massiv va obyektni JSON orqali aylantiramiz. Maxfiy parol yoki tokenlarni localStorage ga yozmang. Ayrim sandbox muhitlarda unga ruxsat bo‘lmasligi mumkin.",
+    "code": "const vazifalar=[\"JS o‘rganish\",\"Masala yechish\"];\nconst saqlash=JSON.stringify(vazifalar);\nconsole.log(\"Saqlanadigan matn:\",saqlash);\nconsole.log(\"Qayta o‘qish:\",JSON.parse(saqlash));\n// Oddiy veb-sahifada: localStorage.setItem(\"todo\", saqlash);",
+    "practice": "Todo List vazifalarini localStorage orqali sahifa yangilanganda ham saqlang.",
+    "home": "Veb-amaliyot: Todo List yakunlash.",
+    "check": "localStorage qiymatni qaysi turda saqlaydi?",
+    "tip": "",
+    "id": "lesson-32",
+    "number": 32,
+    "week": 8,
+    "durationMinutes": 90,
+    "video": {
+      "title": "",
+      "type": "file",
+      "src": "",
+      "poster": "",
+      "duration": null,
+      "subtitles": [],
+      "transcript": ""
+    },
+    "objectives": [
+      "localStorage brauzerda kichik hajmdagi ma’lumotni saqlaydi va sahifa yangilansa ham qoladi."
+    ],
+    "estimatedDifficulty": "orta"
+  },
+  {
+    "title": "Destructuring va spread/rest",
+    "concept": "Destructuring obyekt/massiv qiymatini ajratadi. Spread ... qiymatlarni yoyadi, rest ... qolganlarini yig‘adi.",
+    "explain": "Obyektni o‘zgartirmasdan yangi nusxa yaratish uchun `{...obyekt}` qulay; ammo ichma-ich tuzilmalar yuzaki nusxalanadi.",
+    "code": "const profil={ism:\"Ali\",ball:90};\nconst {ism,ball}=profil;\nconst yangi={...profil,ball:95};\nconst a=[1,2], b=[...a,3];\nconsole.log(ism,ball,yangi,b);",
+    "practice": "Bir o‘quvchi obyektidan nusxa olib ballini o‘zgartiring; asl obyekt saqlansin.",
+    "home": "Qo‘shimcha: massiv va obyektlar bo‘limidagi mashqlarni qisqa sintaksis bilan qayta yozing.",
+    "check": "Spread operatorining belgisi nima?",
+    "tip": "",
+    "id": "lesson-33",
+    "number": 33,
+    "week": 9,
+    "durationMinutes": 90,
+    "video": {
+      "title": "",
+      "type": "file",
+      "src": "",
+      "poster": "",
+      "duration": null,
+      "subtitles": [],
+      "transcript": ""
+    },
+    "objectives": [
+      "Destructuring obyekt/massiv qiymatini ajratadi. Spread ... qiymatlarni yoyadi, rest ... qolganlarini yig‘adi."
+    ],
+    "estimatedDifficulty": "amaliy"
+  },
+  {
+    "title": "try/catch va xatolar",
+    "concept": "Xatolarni ushlash: try/catch/finally, throw bilan xato chiqarish.",
+    "explain": "Dastur kutmagan holatlarda foydalanuvchiga tushunarli xabar ko‘rsating. `try/catch` mantiqiy xatolarni avtomatik tuzatmaydi; avval ma’lumotni tekshirish ham kerak.",
+    "code": "function bolish(a,b) {\n if(b===0) throw new Error(\"Nolga bo‘lib bo‘lmaydi\");\n return a/b;\n}\ntry { console.log(bolish(8,0)); }\ncatch(xato) { console.log(\"Xatolik:\",xato.message); }",
+    "practice": "Ikki songa bo‘lishda nolga bo‘lish va noto‘g‘ri sonni xato sifatida ushlang.",
+    "home": "Qo‘shimcha: oldingi Begin masalalariga kiritma tekshiruvlarini qo‘shing.",
+    "check": "catch qachon ishlaydi?",
+    "tip": "",
+    "id": "lesson-34",
+    "number": 34,
+    "week": 9,
+    "durationMinutes": 90,
+    "video": {
+      "title": "",
+      "type": "file",
+      "src": "",
+      "poster": "",
+      "duration": null,
+      "subtitles": [],
+      "transcript": ""
+    },
+    "objectives": [
+      "Xatolarni ushlash: try/catch/finally, throw bilan xato chiqarish."
+    ],
+    "estimatedDifficulty": "amaliy"
+  },
+  {
+    "title": "setTimeout va setInterval",
+    "concept": "Vaqtga bog‘liq ishlar setTimeout va setInterval bilan bajariladi.",
+    "explain": "`setTimeout` bir marta kechiktirib, `setInterval` takror-takror chaqiradi. `clearInterval` takrorlashni to‘xtatadi. Ushbu kod ishga tushirish maydonida vaqt bilan natija chiqaradi.",
+    "code": "console.log(\"Boshladik\");\nlet sekund=0;\nconst id=setInterval(()=>{\n sekund++;\n console.log(\"Sekund:\",sekund);\n if(sekund===3) clearInterval(id);\n},1000);",
+    "practice": "60 soniyalik taymer va Stop/Start tugmalarini yarating.",
+    "home": "Veb-amaliyot: test taymeri uchun 60 → 0 sanash.",
+    "check": "clearInterval() nima uchun kerak?",
+    "tip": "",
+    "id": "lesson-35",
+    "number": 35,
+    "week": 9,
+    "durationMinutes": 90,
+    "video": {
+      "title": "",
+      "type": "file",
+      "src": "",
+      "poster": "",
+      "duration": null,
+      "subtitles": [],
+      "transcript": ""
+    },
+    "objectives": [
+      "Vaqtga bog‘liq ishlar setTimeout va setInterval bilan bajariladi."
+    ],
+    "estimatedDifficulty": "amaliy"
+  },
+  {
+    "title": "Rekursiya va modullar",
+    "concept": "Rekursiya — funksiya o‘zini chaqirishi. Modullar kodni fayllar bo‘yicha tartiblaydi.",
+    "explain": "Rekursiyada albatta to‘xtash sharti bo‘lishi kerak. JS modullarida `export` va `import` ishlatiladi. Katta loyihada funksiyalarni alohida faylga ajratish qulay.",
+    "code": "function faktorial(n){\n if(n<=1) return 1;\n return n*faktorial(n-1);\n}\nconsole.log(faktorial(5));\n// Modul misoli: export function faktorial(n) {...}",
+    "practice": "Rekursiv `yigindi(n)` funksiyasini yozing; 1 dan n gacha yig‘indini qaytarsin.",
+    "home": "Rekursiv `yigindi(n)` funksiyasini yozing; 1 dan n gacha yig‘indini qaytarsin.",
+    "check": "Rekursiyada to‘xtash sharti bo‘lmasa nima yuz beradi?",
+    "tip": "",
+    "id": "lesson-36",
+    "number": 36,
+    "week": 9,
+    "durationMinutes": 90,
+    "video": {
+      "title": "",
+      "type": "file",
+      "src": "",
+      "poster": "",
+      "duration": null,
+      "subtitles": [],
+      "transcript": ""
+    },
+    "objectives": [
+      "Rekursiya — funksiya o‘zini chaqirishi. Modullar kodni fayllar bo‘yicha tartiblaydi."
+    ],
+    "estimatedDifficulty": "amaliy"
+  },
+  {
+    "title": "Promise va async/await",
+    "concept": "Asinxron operatsiya vaqt talab qiladi; Promise kelajakdagi natijani ifodalaydi.",
+    "explain": "`await` Promise yakunlanishini kutib, o‘qilishi sodda kod yozish imkonini beradi. `await` odatda `async` funksiya ichida ishlatiladi. Xatolar uchun try/catch kerak.",
+    "code": "function kutish(ms){\n return new Promise(resolve=>setTimeout(resolve,ms));\n}\nasync function dars(){\n console.log(\"Kutilyapti...\");\n await kutish(700);\n console.log(\"Tayyor!\");\n}\ndars();",
+    "practice": "1 soniya kutib `Dars boshlandi` yozadigan async funksiya yarating.",
+    "home": "Veb-amaliyot: Promise va async/await mashqlari.",
+    "check": "await odatda qaysi funksiya ichida ishlatiladi?",
+    "tip": "",
+    "id": "lesson-37",
+    "number": 37,
+    "week": 10,
+    "durationMinutes": 90,
+    "video": {
+      "title": "",
+      "type": "file",
+      "src": "",
+      "poster": "",
+      "duration": null,
+      "subtitles": [],
+      "transcript": ""
+    },
+    "objectives": [
+      "Asinxron operatsiya vaqt talab qiladi; Promise kelajakdagi natijani ifodalaydi."
+    ],
+    "estimatedDifficulty": "amaliy"
+  },
+  {
+    "title": "fetch va HTTP",
+    "concept": "fetch internet manzilidan ma’lumot so‘rash uchun ishlatiladi.",
+    "explain": "HTTPda GET ma’lumot o‘qish, POST ma’lumot yuborish uchun keng ishlatiladi. `fetch` Promise qaytaradi, javobning `ok` holatini tekshirish kerak. Bu mavzu uchun internet kerak bo‘ladi.",
+    "code": "async function yuklash(){\n try {\n  const res=await fetch(\"https://jsonplaceholder.typicode.com/todos/1\");\n  if(!res.ok) throw new Error(\"HTTP \" + res.status);\n  const data=await res.json();\n  console.log(data.title);\n } catch(e){ console.log(\"Tarmoq xatosi:\",e.message); }\n}\nyuklash();",
+    "practice": "Ochiq test API dan 3 ta vazifani olib konsolga chiqaring.",
+    "home": "Veb-amaliyot: ochiq JSON API; internet va CORS talablarini kuzating.",
+    "check": "fetch qaytargan qiymat nima?",
+    "tip": "",
+    "id": "lesson-38",
+    "number": 38,
+    "week": 10,
+    "durationMinutes": 90,
+    "video": {
+      "title": "",
+      "type": "file",
+      "src": "",
+      "poster": "",
+      "duration": null,
+      "subtitles": [],
+      "transcript": ""
+    },
+    "objectives": [
+      "fetch internet manzilidan ma’lumot so‘rash uchun ishlatiladi."
+    ],
+    "estimatedDifficulty": "amaliy"
+  },
+  {
+    "title": "API, JSON va kartochkalar",
+    "concept": "API ma’lumotlarini JSONga aylantirib HTML elementlarda ko‘rsatamiz.",
+    "explain": "Tarmoqdan kelgan qiymatni `textContent` bilan chiqarish xavfsizroq. Array obyektlaridan kartochka yasash uchun `forEach` va `createElement` ishlatiladi.",
+    "code": "const data=[{nom:\"JS\",ball:90},{nom:\"HTML\",ball:95}];\nfor(const item of data){\n const card=document.createElement(\"div\");\n card.textContent=`${item.nom}: ${item.ball}`;\n card.style.padding=\"8px\";\n card.style.border=\"1px solid #888\";\n document.body.append(card);\n}\nconsole.log(\"2 kartochka yaratildi\");",
+    "practice": "API ma’lumotidagi `title` maydonini dinamik kartochkalarda ko‘rsating.",
+    "home": "Veb-amaliyot: API javobidan kamida 5 ta kartochka.",
+    "check": "JSON.parse va res.json() qanday vazifaga ega?",
+    "tip": "",
+    "id": "lesson-39",
+    "number": 39,
+    "week": 10,
+    "durationMinutes": 90,
+    "video": {
+      "title": "",
+      "type": "file",
+      "src": "",
+      "poster": "",
+      "duration": null,
+      "subtitles": [],
+      "transcript": ""
+    },
+    "objectives": [
+      "API ma’lumotlarini JSONga aylantirib HTML elementlarda ko‘rsatamiz."
+    ],
+    "estimatedDifficulty": "amaliy"
+  },
+  {
+    "title": "Loading, empty va error holatlar",
+    "concept": "Veb-ilova yuklanyapti, bo‘sh yoki xato holatini tushunarli ko‘rsatishi kerak.",
+    "explain": "Boshlang‘ich ekranga \"Yuklanmoqda\" yozing, natija kelsa kartochkalarni ko‘rsating, kelmasa \"Ma’lumot yo‘q\". Xato bo‘lsa qayta urinish tugmasini chiqaring.",
+    "code": "function natija(royxat){\n if(!Array.isArray(royxat)) return \"Xato\";\n if(royxat.length===0) return \"Ma’lumot yo‘q\";\n return `${royxat.length} ta yozuv topildi`;\n}\nconsole.log(natija([]));\nconsole.log(natija([1,2,3]));",
+    "practice": "API sahifasiga Loading, Error, Empty holatlari qo‘shing.",
+    "home": "Veb-amaliyot: API loyiha sifatini oshirish.",
+    "check": "Bo‘sh massivda foydalanuvchiga nima ko‘rsatish yaxshi?",
+    "tip": "",
+    "id": "lesson-40",
+    "number": 40,
+    "week": 10,
+    "durationMinutes": 90,
+    "video": {
+      "title": "",
+      "type": "file",
+      "src": "",
+      "poster": "",
+      "duration": null,
+      "subtitles": [],
+      "transcript": ""
+    },
+    "objectives": [
+      "Veb-ilova yuklanyapti, bo‘sh yoki xato holatini tushunarli ko‘rsatishi kerak."
+    ],
+    "estimatedDifficulty": "amaliy"
+  },
+  {
+    "title": "Loyiha arxitekturasi",
+    "concept": "HTML, CSS, JS va ma’lumotlar alohida vazifaga ega bo‘lishi kerak.",
+    "explain": "Katta kodni funksiyalarga bo‘lib yozing: `savolniChiz()`, `javobniTekshir()`, `natijaniHisobla()`. Fayllarga ma’noli nom bering. Avval kichik ishlaydigan versiyani yarating.",
+    "code": "const loyiha={\n nom:\"Mini test\",\n savollar:[],\n vaqt:60,\n holat:\"tayyor\"\n};\nconsole.log(loyiha.nom,loyiha.holat);",
+    "practice": "Papka yarating: index.html, style.css, script.js, questions.js. Ularni ulang.",
+    "home": "Yakuniy loyiha: loyiha papkasi va vazifalar rejasini tuzing.",
+    "check": "Nima uchun kodni kichik funksiyalarga ajratamiz?",
+    "tip": "",
+    "id": "lesson-41",
+    "number": 41,
+    "week": 11,
+    "durationMinutes": 90,
+    "video": {
+      "title": "",
+      "type": "file",
+      "src": "",
+      "poster": "",
+      "duration": null,
+      "subtitles": [],
+      "transcript": ""
+    },
+    "objectives": [
+      "HTML, CSS, JS va ma’lumotlar alohida vazifaga ega bo‘lishi kerak."
+    ],
+    "estimatedDifficulty": "amaliy"
+  },
+  {
+    "title": "Savollar bankini tuzish",
+    "concept": "Test savoli obyekt: id, matn, variantlar, togriIndeks.",
+    "explain": "Savollar massivini tartibli saqlang. Javob indeksi 0 dan boshlanadi. Foydalanuvchiga javobning to‘g‘riligini oldindan ochiq ko‘rsatmang; natijani tanlovdan keyin hisoblang.",
+    "code": "const savollar=[\n {id:1,matn:\"2+2=?\",variantlar:[\"3\",\"4\",\"5\"],togri:1},\n {id:2,matn:\"5*2=?\",variantlar:[\"7\",\"10\",\"12\"],togri:1}\n];\nconsole.log(savollar[0].matn);\nconsole.log(savollar.length);",
+    "practice": "Kamida 10 ta JavaScript savolini obyektlar massivida yozing.",
+    "home": "Kamida 10 ta JavaScript savolini obyektlar massivida yozing.",
+    "check": "Javob indeksi 1 bo‘lsa massivning nechanchi elementi?",
+    "tip": "",
+    "id": "lesson-42",
+    "number": 42,
+    "week": 11,
+    "durationMinutes": 90,
+    "video": {
+      "title": "",
+      "type": "file",
+      "src": "",
+      "poster": "",
+      "duration": null,
+      "subtitles": [],
+      "transcript": ""
+    },
+    "objectives": [
+      "Test savoli obyekt: id, matn, variantlar, togriIndeks."
+    ],
+    "estimatedDifficulty": "amaliy"
+  },
+  {
+    "title": "Savollarni chiqarish va belgilash",
+    "concept": "Joriy savol indeksi, tanlangan javob va navigatsiya holatini saqlaymiz.",
+    "explain": "UI uchun aniq holat kerak: `joriyIndeks`, `javoblar`. Tanlov qilganda indeksni yozing. Har safar keyingi savol chizilganda oldingi tanlovni tiklang.",
+    "code": "const savollar=[\"Savol 1\",\"Savol 2\",\"Savol 3\"];\nlet joriy=0;\nconst javoblar={};\njavoblar[joriy]=2;\njoriy++;\nconsole.log(savollar[joriy]);\nconsole.log(\"Javoblar:\",javoblar);",
+    "practice": "Savol kartasiga 4 ta variant va Keyingi/Oldingi tugmasi qo‘shing.",
+    "home": "Veb-amaliyot: savollar o‘rtasida o‘tish.",
+    "check": "joriyIndeks nimani bildiradi?",
+    "tip": "",
+    "id": "lesson-43",
+    "number": 43,
+    "week": 11,
+    "durationMinutes": 90,
+    "video": {
+      "title": "",
+      "type": "file",
+      "src": "",
+      "poster": "",
+      "duration": null,
+      "subtitles": [],
+      "transcript": ""
+    },
+    "objectives": [
+      "Joriy savol indeksi, tanlangan javob va navigatsiya holatini saqlaymiz."
+    ],
+    "estimatedDifficulty": "amaliy"
+  },
+  {
+    "title": "Ball va natijalar",
+    "concept": "To‘g‘ri javoblar soni va foiz = to‘g‘ri / jami × 100.",
+    "explain": "Javoblar indekslarini savolning `togri` qiymati bilan solishtiring. Javob berilmagan savol noto‘g‘ri deb hisoblanishi mumkin; natijada umumiy, to‘g‘ri va noto‘g‘ri sonlarni ko‘rsating.",
+    "code": "const test=[{togri:1},{togri:0},{togri:2}];\nconst javob=[1,2,2];\nlet togri=0;\ntest.forEach((s,i)=>{if(s.togri===javob[i]) togri++;});\nconsole.log(\"To‘g‘ri:\",togri);\nconsole.log(\"Foiz:\",Math.round(togri/test.length*100));",
+    "practice": "Yakuniy natijada to‘g‘ri, noto‘g‘ri, javobsiz va foiz ko‘rsatkichlarini chiqaring.",
+    "home": "Veb-amaliyot: natija kartasi va qayta boshlash.",
+    "check": "Foiz qanday hisoblanadi?",
+    "tip": "",
+    "id": "lesson-44",
+    "number": 44,
+    "week": 11,
+    "durationMinutes": 90,
+    "video": {
+      "title": "",
+      "type": "file",
+      "src": "",
+      "poster": "",
+      "duration": null,
+      "subtitles": [],
+      "transcript": ""
+    },
+    "objectives": [
+      "To‘g‘ri javoblar soni va foiz = to‘g‘ri / jami × 100."
+    ],
+    "estimatedDifficulty": "amaliy"
+  },
+  {
+    "title": "Taymer va avtomatik yakunlash",
+    "concept": "Vaqt sanashda setInterval, Date.now va finish funksiyasi yordam beradi.",
+    "explain": "Taymerda har soniyada bittadan kamaytirish sodda, ammo tab faol bo‘lmaganda interval kechikishi mumkin. Aniqroq vaqt uchun tugash vaqtini Date.now bilan hisoblang.",
+    "code": "const boshlanish=Date.now();\nconst tugash=boshlanish+3000;\nconst timer=setInterval(()=>{\n const qoldi=Math.max(0,Math.ceil((tugash-Date.now())/1000));\n console.log(qoldi);\n if(qoldi===0) clearInterval(timer);\n},1000);",
+    "practice": "Test uchun 2 daqiqalik taymer yarating; 0 bo‘lganda avtomatik natija chiqsin.",
+    "home": "Veb-amaliyot: taymerni boshlash/to‘xtatish funksiyalari.",
+    "check": "Nega Date.now() yordamida vaqt hisoblash foydali?",
+    "tip": "",
+    "id": "lesson-45",
+    "number": 45,
+    "week": 12,
+    "durationMinutes": 90,
+    "video": {
+      "title": "",
+      "type": "file",
+      "src": "",
+      "poster": "",
+      "duration": null,
+      "subtitles": [],
+      "transcript": ""
+    },
+    "objectives": [
+      "Vaqt sanashda setInterval, Date.now va finish funksiyasi yordam beradi."
+    ],
+    "estimatedDifficulty": "amaliy"
+  },
+  {
+    "title": "Savollarni aralashtirish va navigatsiya",
+    "concept": "Fisher–Yates algoritmi bilan massivni tasodifiy aralashtirish mumkin.",
+    "explain": "`array.sort(() => Math.random() - 0.5)` bir tekis tasodifiy aralashtirishni kafolatlamaydi. Shuning uchun Fisher–Yates ishlatamiz. Asl savollar ro‘yxatini o‘zgartirmaslik uchun nusxa oling.",
+    "code": "const arr=[1,2,3,4,5];\nconst aralash=[...arr];\nfor(let i=aralash.length-1;i>0;i--){\n const j=Math.floor(Math.random()*(i+1));\n [aralash[i],aralash[j]]=[aralash[j],aralash[i]];\n}\nconsole.log(aralash);",
+    "practice": "Savollarni aralashtirish tugmasi va savollar raqamli navigatsiyasini yarating.",
+    "home": "Veb-amaliyot: testning tasodifiy rejimi.",
+    "check": "Nima uchun [...arr] ishlatilgan?",
+    "tip": "",
+    "id": "lesson-46",
+    "number": 46,
+    "week": 12,
+    "durationMinutes": 90,
+    "video": {
+      "title": "",
+      "type": "file",
+      "src": "",
+      "poster": "",
+      "duration": null,
+      "subtitles": [],
+      "transcript": ""
+    },
+    "objectives": [
+      "Fisher–Yates algoritmi bilan massivni tasodifiy aralashtirish mumkin."
+    ],
+    "estimatedDifficulty": "amaliy"
+  },
+  {
+    "title": "Testlash va xatolarni tuzatish",
+    "concept": "Dastur faqat muvaffaqiyatli holatda emas, xato va chegaraviy holatlarda ham ishlashi kerak.",
+    "explain": "0 ta savol, javobsiz topshirish, ikki marta Yakunlash, sahifani yangilash, mobilda tor ekran kabi holatlarni sinang. Console yordamida xato satrini toping.",
+    "code": "function foiz(togri,jami){\n if(jami<=0) return 0;\n return Math.round(togri/jami*100);\n}\nconsole.assert(foiz(3,4)===75,\"Test 1 xato\");\nconsole.assert(foiz(0,0)===0,\"Test 2 xato\");\nconsole.log(\"Tekshiruvlar tugadi\");",
+    "practice": "Kamida 10 ta test holatini yozing va mini-ilovangizni tekshiring.",
+    "home": "Veb-amaliyot: bug ro‘yxati va tuzatishlar.",
+    "check": "Chegaraviy holatga bitta misol ayting.",
+    "tip": "console.assert ifoda yolg‘on bo‘lsa xabar chiqaradi.",
+    "id": "lesson-47",
+    "number": 47,
+    "week": 12,
+    "durationMinutes": 90,
+    "video": {
+      "title": "",
+      "type": "file",
+      "src": "",
+      "poster": "",
+      "duration": null,
+      "subtitles": [],
+      "transcript": ""
+    },
+    "objectives": [
+      "Dastur faqat muvaffaqiyatli holatda emas, xato va chegaraviy holatlarda ham ishlashi kerak."
+    ],
+    "estimatedDifficulty": "amaliy"
+  },
+  {
+    "title": "GitHub, Netlify va yakuniy himoya",
+    "concept": "Statik HTML/CSS/JS loyihani GitHubga yuklash va hostingda e’lon qilish mumkin.",
+    "explain": "git add, git commit va git push orqali versiya saqlanadi. Netlify statik sahifani e’lon qila oladi. Maxfiy API kalitlarini brauzer JavaScript kodiga qo‘shmang. Yakunida loyihani boshidan oxirigacha o‘zingiz namoyish qiling.",
+    "code": "const loyiha={nom:\"Mini nazorat test\",tayyor:true};\nconsole.log(`Loyiha: ${loyiha.nom}`);\nconsole.log(loyiha.tayyor?\"E’lon qilishga tayyor\":\"Tugallanmagan\");",
+    "practice": "GitHubga loyihani yuklang, Netlifyda ishlating; kamida 3 qurilma o‘lchamida tekshiring.",
+    "home": "Yakuniy nazorat: barcha mavzulardan mustaqil 10 ta masala va mini-test platformasi taqdimoti.",
+    "check": "Nima uchun maxfiy kalitlarni frontendga joylash mumkin emas?",
+    "tip": "",
+    "id": "lesson-48",
+    "number": 48,
+    "week": 12,
+    "durationMinutes": 90,
+    "video": {
+      "title": "",
+      "type": "file",
+      "src": "",
+      "poster": "",
+      "duration": null,
+      "subtitles": [],
+      "transcript": ""
+    },
+    "objectives": [
+      "Statik HTML/CSS/JS loyihani GitHubga yuklash va hostingda e’lon qilish mumkin."
+    ],
+    "estimatedDifficulty": "amaliy"
+  }
+]

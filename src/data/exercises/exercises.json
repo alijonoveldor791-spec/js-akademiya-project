@@ -1,0 +1,2406 @@
+[
+  {
+    "id": "Begin1",
+    "lessonId": "lesson-03",
+    "statement": "Kvadratning tomoni a. Perimetrini toping.",
+    "inputs": [
+      {
+        "name": "a",
+        "min": 0,
+        "integer": false
+      }
+    ],
+    "formula": "P = 4a",
+    "starter": "function solve(a) {\n  // Hisoblang va return bilan natijani qaytaring.\n}",
+    "solution": "function solve(a) {\n  return 4*a;\n}",
+    "tests": [
+      {
+        "args": [
+          5
+        ],
+        "expected": 20
+      },
+      {
+        "args": [
+          0
+        ],
+        "expected": 0
+      },
+      {
+        "args": [
+          1.5
+        ],
+        "expected": 6
+      },
+      {
+        "args": [
+          100
+        ],
+        "expected": 400
+      }
+    ],
+    "steps": [
+      "Berilganlar: a. Qiymatlar va o‘lchov birliklarini yozib oling.",
+      "Formula: P = 4a. Har bir amalning tartibini qog‘ozda tekshiring.",
+      "solve funksiyasi kirish qiymatlarini parametr sifatida oladi. Funksiya — nomlangan, qayta chaqiriladigan kod.",
+      "Natijani return orqali qaytaring. Bir nechta natija kerak bo‘lsa [birinchi, ikkinchi] massivini qaytaring.",
+      "Namuna qiymatlarni formulaga qo‘yib qo‘lda hisoblang, so‘ng «Tekshirish»ni bosing.",
+      "Yechimdagi qiymatlarni o‘zgartiring, keyin yechimni yopib kodni mustaqil qayta yozing."
+    ]
+  },
+  {
+    "id": "Begin2",
+    "lessonId": "lesson-03",
+    "statement": "Kvadratning tomoni a. Yuzasini toping.",
+    "inputs": [
+      {
+        "name": "a",
+        "min": 0,
+        "integer": false
+      }
+    ],
+    "formula": "S = a²",
+    "starter": "function solve(a) {\n  // Hisoblang va return bilan natijani qaytaring.\n}",
+    "solution": "function solve(a) {\n  return a**2;\n}",
+    "tests": [
+      {
+        "args": [
+          5
+        ],
+        "expected": 25
+      },
+      {
+        "args": [
+          0
+        ],
+        "expected": 0
+      },
+      {
+        "args": [
+          2.5
+        ],
+        "expected": 6.25
+      },
+      {
+        "args": [
+          100
+        ],
+        "expected": 10000
+      }
+    ],
+    "steps": [
+      "Berilganlar: a. Qiymatlar va o‘lchov birliklarini yozib oling.",
+      "Formula: S = a². Har bir amalning tartibini qog‘ozda tekshiring.",
+      "solve funksiyasi kirish qiymatlarini parametr sifatida oladi. Funksiya — nomlangan, qayta chaqiriladigan kod.",
+      "Natijani return orqali qaytaring. Bir nechta natija kerak bo‘lsa [birinchi, ikkinchi] massivini qaytaring.",
+      "Namuna qiymatlarni formulaga qo‘yib qo‘lda hisoblang, so‘ng «Tekshirish»ni bosing.",
+      "Yechimdagi qiymatlarni o‘zgartiring, keyin yechimni yopib kodni mustaqil qayta yozing."
+    ]
+  },
+  {
+    "id": "Begin3",
+    "lessonId": "lesson-05",
+    "statement": "To‘g‘ri to‘rtburchak yuzasi va perimetrini [S, P] shaklida qaytaring.",
+    "inputs": [
+      {
+        "name": "a",
+        "min": 0,
+        "integer": false
+      },
+      {
+        "name": "b",
+        "min": 0,
+        "integer": false
+      }
+    ],
+    "formula": "S = ab; P = 2(a+b)",
+    "starter": "function solve(a, b) {\n  // Hisoblang va return bilan natijani qaytaring.\n}",
+    "solution": "function solve(a, b) {\n  return [a*b,2*(a+b)];\n}",
+    "tests": [
+      {
+        "args": [
+          3,
+          4
+        ],
+        "expected": [
+          12,
+          14
+        ]
+      },
+      {
+        "args": [
+          0,
+          4
+        ],
+        "expected": [
+          0,
+          8
+        ]
+      },
+      {
+        "args": [
+          1.5,
+          2
+        ],
+        "expected": [
+          3,
+          7
+        ]
+      },
+      {
+        "args": [
+          100,
+          20
+        ],
+        "expected": [
+          2000,
+          240
+        ]
+      }
+    ],
+    "steps": [
+      "Berilganlar: a, b. Qiymatlar va o‘lchov birliklarini yozib oling.",
+      "Formula: S = ab; P = 2(a+b). Har bir amalning tartibini qog‘ozda tekshiring.",
+      "solve funksiyasi kirish qiymatlarini parametr sifatida oladi. Funksiya — nomlangan, qayta chaqiriladigan kod.",
+      "Natijani return orqali qaytaring. Bir nechta natija kerak bo‘lsa [birinchi, ikkinchi] massivini qaytaring.",
+      "Namuna qiymatlarni formulaga qo‘yib qo‘lda hisoblang, so‘ng «Tekshirish»ni bosing.",
+      "Yechimdagi qiymatlarni o‘zgartiring, keyin yechimni yopib kodni mustaqil qayta yozing."
+    ]
+  },
+  {
+    "id": "Begin4",
+    "lessonId": "lesson-05",
+    "statement": "Diametr d. Aylana uzunligini toping.",
+    "inputs": [
+      {
+        "name": "d",
+        "min": 0,
+        "integer": false
+      }
+    ],
+    "formula": "L = πd",
+    "starter": "function solve(d) {\n  // Hisoblang va return bilan natijani qaytaring.\n}",
+    "solution": "function solve(d) {\n  return Math.PI*d;\n}",
+    "tests": [
+      {
+        "args": [
+          10
+        ],
+        "expected": 31.41592653589793
+      },
+      {
+        "args": [
+          0
+        ],
+        "expected": 0
+      },
+      {
+        "args": [
+          1.5
+        ],
+        "expected": 4.71238898038469
+      }
+    ],
+    "steps": [
+      "Berilganlar: d. Qiymatlar va o‘lchov birliklarini yozib oling.",
+      "Formula: L = πd. Har bir amalning tartibini qog‘ozda tekshiring.",
+      "solve funksiyasi kirish qiymatlarini parametr sifatida oladi. Funksiya — nomlangan, qayta chaqiriladigan kod.",
+      "Natijani return orqali qaytaring. Bir nechta natija kerak bo‘lsa [birinchi, ikkinchi] massivini qaytaring.",
+      "Namuna qiymatlarni formulaga qo‘yib qo‘lda hisoblang, so‘ng «Tekshirish»ni bosing.",
+      "Yechimdagi qiymatlarni o‘zgartiring, keyin yechimni yopib kodni mustaqil qayta yozing."
+    ]
+  },
+  {
+    "id": "Begin5",
+    "lessonId": "lesson-05",
+    "statement": "Kub tomoni a. Hajm va to‘la sirtni [V, S] ko‘rinishida qaytaring.",
+    "inputs": [
+      {
+        "name": "a",
+        "min": 0,
+        "integer": false
+      }
+    ],
+    "formula": "V = a³; S = 6a²",
+    "starter": "function solve(a) {\n  // Hisoblang va return bilan natijani qaytaring.\n}",
+    "solution": "function solve(a) {\n  return [a**3,6*a*a];\n}",
+    "tests": [
+      {
+        "args": [
+          2
+        ],
+        "expected": [
+          8,
+          24
+        ]
+      },
+      {
+        "args": [
+          0
+        ],
+        "expected": [
+          0,
+          0
+        ]
+      },
+      {
+        "args": [
+          1.5
+        ],
+        "expected": [
+          3.375,
+          13.5
+        ]
+      }
+    ],
+    "steps": [
+      "Berilganlar: a. Qiymatlar va o‘lchov birliklarini yozib oling.",
+      "Formula: V = a³; S = 6a². Har bir amalning tartibini qog‘ozda tekshiring.",
+      "solve funksiyasi kirish qiymatlarini parametr sifatida oladi. Funksiya — nomlangan, qayta chaqiriladigan kod.",
+      "Natijani return orqali qaytaring. Bir nechta natija kerak bo‘lsa [birinchi, ikkinchi] massivini qaytaring.",
+      "Namuna qiymatlarni formulaga qo‘yib qo‘lda hisoblang, so‘ng «Tekshirish»ni bosing.",
+      "Yechimdagi qiymatlarni o‘zgartiring, keyin yechimni yopib kodni mustaqil qayta yozing."
+    ]
+  },
+  {
+    "id": "Begin7",
+    "lessonId": "lesson-07",
+    "statement": "Doira radiusi R. Uzunlik va yuzani [L, S] qaytaring.",
+    "inputs": [
+      {
+        "name": "R",
+        "min": 0,
+        "integer": false
+      }
+    ],
+    "formula": "L = 2πR; S = πR²",
+    "starter": "function solve(R) {\n  // Hisoblang va return bilan natijani qaytaring.\n}",
+    "solution": "function solve(R) {\n  return [2*Math.PI*R,Math.PI*R**2];\n}",
+    "tests": [
+      {
+        "args": [
+          5
+        ],
+        "expected": [
+          31.41592653589793,
+          78.53981633974483
+        ]
+      },
+      {
+        "args": [
+          0
+        ],
+        "expected": [
+          0,
+          0
+        ]
+      },
+      {
+        "args": [
+          1.25
+        ],
+        "expected": [
+          7.853981633974483,
+          4.908738521234052
+        ]
+      }
+    ],
+    "steps": [
+      "Berilganlar: R. Qiymatlar va o‘lchov birliklarini yozib oling.",
+      "Formula: L = 2πR; S = πR². Har bir amalning tartibini qog‘ozda tekshiring.",
+      "solve funksiyasi kirish qiymatlarini parametr sifatida oladi. Funksiya — nomlangan, qayta chaqiriladigan kod.",
+      "Natijani return orqali qaytaring. Bir nechta natija kerak bo‘lsa [birinchi, ikkinchi] massivini qaytaring.",
+      "Namuna qiymatlarni formulaga qo‘yib qo‘lda hisoblang, so‘ng «Tekshirish»ni bosing.",
+      "Yechimdagi qiymatlarni o‘zgartiring, keyin yechimni yopib kodni mustaqil qayta yozing."
+    ]
+  },
+  {
+    "id": "Begin8",
+    "lessonId": "lesson-05",
+    "statement": "Ikkita sonning o‘rta arifmetigini toping.",
+    "inputs": [
+      {
+        "name": "a",
+        "integer": false
+      },
+      {
+        "name": "b",
+        "integer": false
+      }
+    ],
+    "formula": "M = (a+b)/2",
+    "starter": "function solve(a, b) {\n  // Hisoblang va return bilan natijani qaytaring.\n}",
+    "solution": "function solve(a, b) {\n  return (a+b)/2;\n}",
+    "tests": [
+      {
+        "args": [
+          2,
+          8
+        ],
+        "expected": 5
+      },
+      {
+        "args": [
+          -4,
+          2
+        ],
+        "expected": -1
+      },
+      {
+        "args": [
+          0,
+          0
+        ],
+        "expected": 0
+      },
+      {
+        "args": [
+          1.5,
+          2.5
+        ],
+        "expected": 2
+      }
+    ],
+    "steps": [
+      "Berilganlar: a, b. Qiymatlar va o‘lchov birliklarini yozib oling.",
+      "Formula: M = (a+b)/2. Har bir amalning tartibini qog‘ozda tekshiring.",
+      "solve funksiyasi kirish qiymatlarini parametr sifatida oladi. Funksiya — nomlangan, qayta chaqiriladigan kod.",
+      "Natijani return orqali qaytaring. Bir nechta natija kerak bo‘lsa [birinchi, ikkinchi] massivini qaytaring.",
+      "Namuna qiymatlarni formulaga qo‘yib qo‘lda hisoblang, so‘ng «Tekshirish»ni bosing.",
+      "Yechimdagi qiymatlarni o‘zgartiring, keyin yechimni yopib kodni mustaqil qayta yozing."
+    ]
+  },
+  {
+    "id": "Begin9",
+    "lessonId": "lesson-07",
+    "statement": "Manfiy bo‘lmagan ikki sonning o‘rta geometrigini toping.",
+    "inputs": [
+      {
+        "name": "a",
+        "min": 0,
+        "integer": false
+      },
+      {
+        "name": "b",
+        "min": 0,
+        "integer": false
+      }
+    ],
+    "formula": "G = √(ab)",
+    "starter": "function solve(a, b) {\n  // Hisoblang va return bilan natijani qaytaring.\n}",
+    "solution": "function solve(a, b) {\n  return Math.sqrt(a*b);\n}",
+    "tests": [
+      {
+        "args": [
+          4,
+          9
+        ],
+        "expected": 6
+      },
+      {
+        "args": [
+          0,
+          10
+        ],
+        "expected": 0
+      },
+      {
+        "args": [
+          1.5,
+          6
+        ],
+        "expected": 3
+      }
+    ],
+    "steps": [
+      "Berilganlar: a, b. Qiymatlar va o‘lchov birliklarini yozib oling.",
+      "Formula: G = √(ab). Har bir amalning tartibini qog‘ozda tekshiring.",
+      "solve funksiyasi kirish qiymatlarini parametr sifatida oladi. Funksiya — nomlangan, qayta chaqiriladigan kod.",
+      "Natijani return orqali qaytaring. Bir nechta natija kerak bo‘lsa [birinchi, ikkinchi] massivini qaytaring.",
+      "Namuna qiymatlarni formulaga qo‘yib qo‘lda hisoblang, so‘ng «Tekshirish»ni bosing.",
+      "Yechimdagi qiymatlarni o‘zgartiring, keyin yechimni yopib kodni mustaqil qayta yozing."
+    ]
+  },
+  {
+    "id": "Begin12",
+    "lessonId": "lesson-07",
+    "statement": "Katetlar a va b. Gipotenuza va perimetrni [c, P] qaytaring.",
+    "inputs": [
+      {
+        "name": "a",
+        "min": 0,
+        "integer": false
+      },
+      {
+        "name": "b",
+        "min": 0,
+        "integer": false
+      }
+    ],
+    "formula": "c = √(a²+b²); P = a+b+c",
+    "starter": "function solve(a, b) {\n  // Hisoblang va return bilan natijani qaytaring.\n}",
+    "solution": "function solve(a, b) {\n  return [Math.hypot(a,b),a+b+Math.hypot(a,b)];\n}",
+    "tests": [
+      {
+        "args": [
+          3,
+          4
+        ],
+        "expected": [
+          5,
+          12
+        ]
+      },
+      {
+        "args": [
+          0,
+          0
+        ],
+        "expected": [
+          0,
+          0
+        ]
+      },
+      {
+        "args": [
+          5,
+          12
+        ],
+        "expected": [
+          13,
+          30
+        ]
+      }
+    ],
+    "steps": [
+      "Berilganlar: a, b. Qiymatlar va o‘lchov birliklarini yozib oling.",
+      "Formula: c = √(a²+b²); P = a+b+c. Har bir amalning tartibini qog‘ozda tekshiring.",
+      "solve funksiyasi kirish qiymatlarini parametr sifatida oladi. Funksiya — nomlangan, qayta chaqiriladigan kod.",
+      "Natijani return orqali qaytaring. Bir nechta natija kerak bo‘lsa [birinchi, ikkinchi] massivini qaytaring.",
+      "Namuna qiymatlarni formulaga qo‘yib qo‘lda hisoblang, so‘ng «Tekshirish»ni bosing.",
+      "Yechimdagi qiymatlarni o‘zgartiring, keyin yechimni yopib kodni mustaqil qayta yozing."
+    ]
+  },
+  {
+    "id": "Begin20",
+    "lessonId": "lesson-07",
+    "statement": "Tekislikdagi ikki nuqta orasidagi masofani toping.",
+    "inputs": [
+      {
+        "name": "x1",
+        "integer": false
+      },
+      {
+        "name": "y1",
+        "integer": false
+      },
+      {
+        "name": "x2",
+        "integer": false
+      },
+      {
+        "name": "y2",
+        "integer": false
+      }
+    ],
+    "formula": "D = √((x₂−x₁)²+(y₂−y₁)²)",
+    "starter": "function solve(x1, y1, x2, y2) {\n  // Hisoblang va return bilan natijani qaytaring.\n}",
+    "solution": "function solve(x1, y1, x2, y2) {\n  return Math.hypot(x2-x1,y2-y1);\n}",
+    "tests": [
+      {
+        "args": [
+          0,
+          0,
+          3,
+          4
+        ],
+        "expected": 5
+      },
+      {
+        "args": [
+          -1,
+          -1,
+          2,
+          3
+        ],
+        "expected": 5
+      },
+      {
+        "args": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "expected": 0
+      }
+    ],
+    "steps": [
+      "Berilganlar: x1, y1, x2, y2. Qiymatlar va o‘lchov birliklarini yozib oling.",
+      "Formula: D = √((x₂−x₁)²+(y₂−y₁)²). Har bir amalning tartibini qog‘ozda tekshiring.",
+      "solve funksiyasi kirish qiymatlarini parametr sifatida oladi. Funksiya — nomlangan, qayta chaqiriladigan kod.",
+      "Natijani return orqali qaytaring. Bir nechta natija kerak bo‘lsa [birinchi, ikkinchi] massivini qaytaring.",
+      "Namuna qiymatlarni formulaga qo‘yib qo‘lda hisoblang, so‘ng «Tekshirish»ni bosing.",
+      "Yechimdagi qiymatlarni o‘zgartiring, keyin yechimni yopib kodni mustaqil qayta yozing."
+    ]
+  },
+  {
+    "id": "Begin22",
+    "lessonId": "lesson-03",
+    "statement": "A va B qiymatlarini almashtirib [A, B] qaytaring.",
+    "inputs": [
+      {
+        "name": "A",
+        "integer": false
+      },
+      {
+        "name": "B",
+        "integer": false
+      }
+    ],
+    "formula": "A ← eski B; B ← eski A",
+    "starter": "function solve(A, B) {\n  // Hisoblang va return bilan natijani qaytaring.\n}",
+    "solution": "function solve(A, B) {\n  return [B,A];\n}",
+    "tests": [
+      {
+        "args": [
+          2,
+          7
+        ],
+        "expected": [
+          7,
+          2
+        ]
+      },
+      {
+        "args": [
+          -1,
+          0
+        ],
+        "expected": [
+          0,
+          -1
+        ]
+      },
+      {
+        "args": [
+          3,
+          3
+        ],
+        "expected": [
+          3,
+          3
+        ]
+      }
+    ],
+    "steps": [
+      "Berilganlar: A, B. Qiymatlar va o‘lchov birliklarini yozib oling.",
+      "Formula: A ← eski B; B ← eski A. Har bir amalning tartibini qog‘ozda tekshiring.",
+      "solve funksiyasi kirish qiymatlarini parametr sifatida oladi. Funksiya — nomlangan, qayta chaqiriladigan kod.",
+      "Natijani return orqali qaytaring. Bir nechta natija kerak bo‘lsa [birinchi, ikkinchi] massivini qaytaring.",
+      "Namuna qiymatlarni formulaga qo‘yib qo‘lda hisoblang, so‘ng «Tekshirish»ni bosing.",
+      "Yechimdagi qiymatlarni o‘zgartiring, keyin yechimni yopib kodni mustaqil qayta yozing."
+    ]
+  },
+  {
+    "id": "Begin23",
+    "lessonId": "lesson-03",
+    "statement": "Qiymatlarni A → B → C → A yo‘nalishida almashtiring. [A, B, C] qaytaring.",
+    "inputs": [
+      {
+        "name": "A",
+        "integer": false
+      },
+      {
+        "name": "B",
+        "integer": false
+      },
+      {
+        "name": "C",
+        "integer": false
+      }
+    ],
+    "formula": "A ← eski C; B ← eski A; C ← eski B",
+    "starter": "function solve(A, B, C) {\n  // Hisoblang va return bilan natijani qaytaring.\n}",
+    "solution": "function solve(A, B, C) {\n  return [C,A,B];\n}",
+    "tests": [
+      {
+        "args": [
+          1,
+          2,
+          3
+        ],
+        "expected": [
+          3,
+          1,
+          2
+        ]
+      },
+      {
+        "args": [
+          -2,
+          0,
+          4
+        ],
+        "expected": [
+          4,
+          -2,
+          0
+        ]
+      },
+      {
+        "args": [
+          0,
+          0,
+          0
+        ],
+        "expected": [
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "steps": [
+      "Berilganlar: A, B, C. Qiymatlar va o‘lchov birliklarini yozib oling.",
+      "Formula: A ← eski C; B ← eski A; C ← eski B. Har bir amalning tartibini qog‘ozda tekshiring.",
+      "solve funksiyasi kirish qiymatlarini parametr sifatida oladi. Funksiya — nomlangan, qayta chaqiriladigan kod.",
+      "Natijani return orqali qaytaring. Bir nechta natija kerak bo‘lsa [birinchi, ikkinchi] massivini qaytaring.",
+      "Namuna qiymatlarni formulaga qo‘yib qo‘lda hisoblang, so‘ng «Tekshirish»ni bosing.",
+      "Yechimdagi qiymatlarni o‘zgartiring, keyin yechimni yopib kodni mustaqil qayta yozing."
+    ]
+  },
+  {
+    "id": "Begin29",
+    "lessonId": "lesson-06",
+    "statement": "Gradusdagi burchakni radianga aylantiring.",
+    "inputs": [
+      {
+        "name": "a",
+        "integer": false
+      }
+    ],
+    "formula": "rad = aπ/180",
+    "starter": "function solve(a) {\n  // Hisoblang va return bilan natijani qaytaring.\n}",
+    "solution": "function solve(a) {\n  return a*Math.PI/180;\n}",
+    "tests": [
+      {
+        "args": [
+          180
+        ],
+        "expected": 3.141592653589793
+      },
+      {
+        "args": [
+          0
+        ],
+        "expected": 0
+      },
+      {
+        "args": [
+          -90
+        ],
+        "expected": -1.5707963267948966
+      },
+      {
+        "args": [
+          45
+        ],
+        "expected": 0.7853981633974483
+      }
+    ],
+    "steps": [
+      "Berilganlar: a. Qiymatlar va o‘lchov birliklarini yozib oling.",
+      "Formula: rad = aπ/180. Har bir amalning tartibini qog‘ozda tekshiring.",
+      "solve funksiyasi kirish qiymatlarini parametr sifatida oladi. Funksiya — nomlangan, qayta chaqiriladigan kod.",
+      "Natijani return orqali qaytaring. Bir nechta natija kerak bo‘lsa [birinchi, ikkinchi] massivini qaytaring.",
+      "Namuna qiymatlarni formulaga qo‘yib qo‘lda hisoblang, so‘ng «Tekshirish»ni bosing.",
+      "Yechimdagi qiymatlarni o‘zgartiring, keyin yechimni yopib kodni mustaqil qayta yozing."
+    ]
+  },
+  {
+    "id": "Begin31",
+    "lessonId": "lesson-06",
+    "statement": "Farengeyt haroratini Selsiyga aylantiring.",
+    "inputs": [
+      {
+        "name": "F",
+        "integer": false
+      }
+    ],
+    "formula": "C = (F−32)·5/9",
+    "starter": "function solve(F) {\n  // Hisoblang va return bilan natijani qaytaring.\n}",
+    "solution": "function solve(F) {\n  return (F-32)*5/9;\n}",
+    "tests": [
+      {
+        "args": [
+          32
+        ],
+        "expected": 0
+      },
+      {
+        "args": [
+          212
+        ],
+        "expected": 100
+      },
+      {
+        "args": [
+          -40
+        ],
+        "expected": -40
+      },
+      {
+        "args": [
+          0
+        ],
+        "expected": -17.77777777777778
+      }
+    ],
+    "steps": [
+      "Berilganlar: F. Qiymatlar va o‘lchov birliklarini yozib oling.",
+      "Formula: C = (F−32)·5/9. Har bir amalning tartibini qog‘ozda tekshiring.",
+      "solve funksiyasi kirish qiymatlarini parametr sifatida oladi. Funksiya — nomlangan, qayta chaqiriladigan kod.",
+      "Natijani return orqali qaytaring. Bir nechta natija kerak bo‘lsa [birinchi, ikkinchi] massivini qaytaring.",
+      "Namuna qiymatlarni formulaga qo‘yib qo‘lda hisoblang, so‘ng «Tekshirish»ni bosing.",
+      "Yechimdagi qiymatlarni o‘zgartiring, keyin yechimni yopib kodni mustaqil qayta yozing."
+    ]
+  },
+  {
+    "id": "Integer1",
+    "lessonId": "lesson-08",
+    "statement": "Santimetrdagi uzunlikdan to‘liq metrlar sonini toping.",
+    "inputs": [
+      {
+        "name": "L",
+        "min": 0,
+        "integer": true
+      }
+    ],
+    "formula": "m = floor(L/100)",
+    "starter": "function solve(L) {\n  // Hisoblang va return bilan natijani qaytaring.\n}",
+    "solution": "function solve(L) {\n  return Math.floor(L/100);\n}",
+    "tests": [
+      {
+        "args": [
+          250
+        ],
+        "expected": 2
+      },
+      {
+        "args": [
+          0
+        ],
+        "expected": 0
+      },
+      {
+        "args": [
+          99
+        ],
+        "expected": 0
+      },
+      {
+        "args": [
+          100
+        ],
+        "expected": 1
+      }
+    ],
+    "steps": [
+      "Berilganlar: L. Qiymatlar va o‘lchov birliklarini yozib oling.",
+      "Formula: m = floor(L/100). Har bir amalning tartibini qog‘ozda tekshiring.",
+      "solve funksiyasi kirish qiymatlarini parametr sifatida oladi. Funksiya — nomlangan, qayta chaqiriladigan kod.",
+      "Natijani return orqali qaytaring. Bir nechta natija kerak bo‘lsa [birinchi, ikkinchi] massivini qaytaring.",
+      "Namuna qiymatlarni formulaga qo‘yib qo‘lda hisoblang, so‘ng «Tekshirish»ni bosing.",
+      "Yechimdagi qiymatlarni o‘zgartiring, keyin yechimni yopib kodni mustaqil qayta yozing."
+    ]
+  },
+  {
+    "id": "Integer2",
+    "lessonId": "lesson-08",
+    "statement": "Kilogrammdagi og‘irlikdan to‘liq tonnalar sonini toping.",
+    "inputs": [
+      {
+        "name": "M",
+        "min": 0,
+        "integer": true
+      }
+    ],
+    "formula": "t = floor(M/1000)",
+    "starter": "function solve(M) {\n  // Hisoblang va return bilan natijani qaytaring.\n}",
+    "solution": "function solve(M) {\n  return Math.floor(M/1000);\n}",
+    "tests": [
+      {
+        "args": [
+          2500
+        ],
+        "expected": 2
+      },
+      {
+        "args": [
+          0
+        ],
+        "expected": 0
+      },
+      {
+        "args": [
+          999
+        ],
+        "expected": 0
+      },
+      {
+        "args": [
+          1000
+        ],
+        "expected": 1
+      }
+    ],
+    "steps": [
+      "Berilganlar: M. Qiymatlar va o‘lchov birliklarini yozib oling.",
+      "Formula: t = floor(M/1000). Har bir amalning tartibini qog‘ozda tekshiring.",
+      "solve funksiyasi kirish qiymatlarini parametr sifatida oladi. Funksiya — nomlangan, qayta chaqiriladigan kod.",
+      "Natijani return orqali qaytaring. Bir nechta natija kerak bo‘lsa [birinchi, ikkinchi] massivini qaytaring.",
+      "Namuna qiymatlarni formulaga qo‘yib qo‘lda hisoblang, so‘ng «Tekshirish»ni bosing.",
+      "Yechimdagi qiymatlarni o‘zgartiring, keyin yechimni yopib kodni mustaqil qayta yozing."
+    ]
+  },
+  {
+    "id": "Integer3",
+    "lessonId": "lesson-08",
+    "statement": "Baytlardagi hajmdan to‘liq kilobaytlar sonini toping. Bu mashqda 1 KB = 1024 bayt.",
+    "inputs": [
+      {
+        "name": "B",
+        "min": 0,
+        "integer": true
+      }
+    ],
+    "formula": "KB = floor(B/1024)",
+    "starter": "function solve(B) {\n  // Hisoblang va return bilan natijani qaytaring.\n}",
+    "solution": "function solve(B) {\n  return Math.floor(B/1024);\n}",
+    "tests": [
+      {
+        "args": [
+          2049
+        ],
+        "expected": 2
+      },
+      {
+        "args": [
+          0
+        ],
+        "expected": 0
+      },
+      {
+        "args": [
+          1023
+        ],
+        "expected": 0
+      },
+      {
+        "args": [
+          1024
+        ],
+        "expected": 1
+      }
+    ],
+    "steps": [
+      "Berilganlar: B. Qiymatlar va o‘lchov birliklarini yozib oling.",
+      "Formula: KB = floor(B/1024). Har bir amalning tartibini qog‘ozda tekshiring.",
+      "solve funksiyasi kirish qiymatlarini parametr sifatida oladi. Funksiya — nomlangan, qayta chaqiriladigan kod.",
+      "Natijani return orqali qaytaring. Bir nechta natija kerak bo‘lsa [birinchi, ikkinchi] massivini qaytaring.",
+      "Namuna qiymatlarni formulaga qo‘yib qo‘lda hisoblang, so‘ng «Tekshirish»ni bosing.",
+      "Yechimdagi qiymatlarni o‘zgartiring, keyin yechimni yopib kodni mustaqil qayta yozing."
+    ]
+  },
+  {
+    "id": "Integer6",
+    "lessonId": "lesson-08",
+    "statement": "Ikki xonali sonning [o‘nlik, birlik] raqamlarini ajrating.",
+    "inputs": [
+      {
+        "name": "n",
+        "min": 10,
+        "max": 99,
+        "integer": true
+      }
+    ],
+    "formula": "o‘nlik = floor(n/10); birlik = n%10",
+    "starter": "function solve(n) {\n  // Hisoblang va return bilan natijani qaytaring.\n}",
+    "solution": "function solve(n) {\n  return [Math.floor(n/10),n%10];\n}",
+    "tests": [
+      {
+        "args": [
+          47
+        ],
+        "expected": [
+          4,
+          7
+        ]
+      },
+      {
+        "args": [
+          10
+        ],
+        "expected": [
+          1,
+          0
+        ]
+      },
+      {
+        "args": [
+          99
+        ],
+        "expected": [
+          9,
+          9
+        ]
+      }
+    ],
+    "steps": [
+      "Berilganlar: n. Qiymatlar va o‘lchov birliklarini yozib oling.",
+      "Formula: o‘nlik = floor(n/10); birlik = n%10. Har bir amalning tartibini qog‘ozda tekshiring.",
+      "solve funksiyasi kirish qiymatlarini parametr sifatida oladi. Funksiya — nomlangan, qayta chaqiriladigan kod.",
+      "Natijani return orqali qaytaring. Bir nechta natija kerak bo‘lsa [birinchi, ikkinchi] massivini qaytaring.",
+      "Namuna qiymatlarni formulaga qo‘yib qo‘lda hisoblang, so‘ng «Tekshirish»ni bosing.",
+      "Yechimdagi qiymatlarni o‘zgartiring, keyin yechimni yopib kodni mustaqil qayta yozing."
+    ]
+  },
+  {
+    "id": "Integer7",
+    "lessonId": "lesson-08",
+    "statement": "Ikki xonali son raqamlari yig‘indisini toping.",
+    "inputs": [
+      {
+        "name": "n",
+        "min": 10,
+        "max": 99,
+        "integer": true
+      }
+    ],
+    "formula": "S = floor(n/10)+n%10",
+    "starter": "function solve(n) {\n  // Hisoblang va return bilan natijani qaytaring.\n}",
+    "solution": "function solve(n) {\n  return Math.floor(n/10)+n%10;\n}",
+    "tests": [
+      {
+        "args": [
+          47
+        ],
+        "expected": 11
+      },
+      {
+        "args": [
+          10
+        ],
+        "expected": 1
+      },
+      {
+        "args": [
+          99
+        ],
+        "expected": 18
+      }
+    ],
+    "steps": [
+      "Berilganlar: n. Qiymatlar va o‘lchov birliklarini yozib oling.",
+      "Formula: S = floor(n/10)+n%10. Har bir amalning tartibini qog‘ozda tekshiring.",
+      "solve funksiyasi kirish qiymatlarini parametr sifatida oladi. Funksiya — nomlangan, qayta chaqiriladigan kod.",
+      "Natijani return orqali qaytaring. Bir nechta natija kerak bo‘lsa [birinchi, ikkinchi] massivini qaytaring.",
+      "Namuna qiymatlarni formulaga qo‘yib qo‘lda hisoblang, so‘ng «Tekshirish»ni bosing.",
+      "Yechimdagi qiymatlarni o‘zgartiring, keyin yechimni yopib kodni mustaqil qayta yozing."
+    ]
+  },
+  {
+    "id": "Integer8",
+    "lessonId": "lesson-08",
+    "statement": "Ikki xonali son raqamlarini almashtiring.",
+    "inputs": [
+      {
+        "name": "n",
+        "min": 10,
+        "max": 99,
+        "integer": true
+      }
+    ],
+    "formula": "N = (n%10)·10+floor(n/10)",
+    "starter": "function solve(n) {\n  // Hisoblang va return bilan natijani qaytaring.\n}",
+    "solution": "function solve(n) {\n  return n%10*10+Math.floor(n/10);\n}",
+    "tests": [
+      {
+        "args": [
+          47
+        ],
+        "expected": 74
+      },
+      {
+        "args": [
+          10
+        ],
+        "expected": 1
+      },
+      {
+        "args": [
+          99
+        ],
+        "expected": 99
+      }
+    ],
+    "steps": [
+      "Berilganlar: n. Qiymatlar va o‘lchov birliklarini yozib oling.",
+      "Formula: N = (n%10)·10+floor(n/10). Har bir amalning tartibini qog‘ozda tekshiring.",
+      "solve funksiyasi kirish qiymatlarini parametr sifatida oladi. Funksiya — nomlangan, qayta chaqiriladigan kod.",
+      "Natijani return orqali qaytaring. Bir nechta natija kerak bo‘lsa [birinchi, ikkinchi] massivini qaytaring.",
+      "Namuna qiymatlarni formulaga qo‘yib qo‘lda hisoblang, so‘ng «Tekshirish»ni bosing.",
+      "Yechimdagi qiymatlarni o‘zgartiring, keyin yechimni yopib kodni mustaqil qayta yozing."
+    ]
+  },
+  {
+    "id": "Integer9",
+    "lessonId": "lesson-08",
+    "statement": "Uch xonali sonning yuzlik raqamini toping.",
+    "inputs": [
+      {
+        "name": "n",
+        "min": 100,
+        "max": 999,
+        "integer": true
+      }
+    ],
+    "formula": "Y = floor(n/100)",
+    "starter": "function solve(n) {\n  // Hisoblang va return bilan natijani qaytaring.\n}",
+    "solution": "function solve(n) {\n  return Math.floor(n/100);\n}",
+    "tests": [
+      {
+        "args": [
+          347
+        ],
+        "expected": 3
+      },
+      {
+        "args": [
+          100
+        ],
+        "expected": 1
+      },
+      {
+        "args": [
+          999
+        ],
+        "expected": 9
+      }
+    ],
+    "steps": [
+      "Berilganlar: n. Qiymatlar va o‘lchov birliklarini yozib oling.",
+      "Formula: Y = floor(n/100). Har bir amalning tartibini qog‘ozda tekshiring.",
+      "solve funksiyasi kirish qiymatlarini parametr sifatida oladi. Funksiya — nomlangan, qayta chaqiriladigan kod.",
+      "Natijani return orqali qaytaring. Bir nechta natija kerak bo‘lsa [birinchi, ikkinchi] massivini qaytaring.",
+      "Namuna qiymatlarni formulaga qo‘yib qo‘lda hisoblang, so‘ng «Tekshirish»ni bosing.",
+      "Yechimdagi qiymatlarni o‘zgartiring, keyin yechimni yopib kodni mustaqil qayta yozing."
+    ]
+  },
+  {
+    "id": "Integer11",
+    "lessonId": "lesson-08",
+    "statement": "Uch xonali son raqamlari yig‘indisini toping.",
+    "inputs": [
+      {
+        "name": "n",
+        "min": 100,
+        "max": 999,
+        "integer": true
+      }
+    ],
+    "formula": "S = floor(n/100)+floor(n/10)%10+n%10",
+    "starter": "function solve(n) {\n  // Hisoblang va return bilan natijani qaytaring.\n}",
+    "solution": "function solve(n) {\n  return Math.floor(n/100)+Math.floor(n/10)%10+n%10;\n}",
+    "tests": [
+      {
+        "args": [
+          347
+        ],
+        "expected": 14
+      },
+      {
+        "args": [
+          100
+        ],
+        "expected": 1
+      },
+      {
+        "args": [
+          999
+        ],
+        "expected": 27
+      }
+    ],
+    "steps": [
+      "Berilganlar: n. Qiymatlar va o‘lchov birliklarini yozib oling.",
+      "Formula: S = floor(n/100)+floor(n/10)%10+n%10. Har bir amalning tartibini qog‘ozda tekshiring.",
+      "solve funksiyasi kirish qiymatlarini parametr sifatida oladi. Funksiya — nomlangan, qayta chaqiriladigan kod.",
+      "Natijani return orqali qaytaring. Bir nechta natija kerak bo‘lsa [birinchi, ikkinchi] massivini qaytaring.",
+      "Namuna qiymatlarni formulaga qo‘yib qo‘lda hisoblang, so‘ng «Tekshirish»ni bosing.",
+      "Yechimdagi qiymatlarni o‘zgartiring, keyin yechimni yopib kodni mustaqil qayta yozing."
+    ]
+  },
+  {
+    "id": "Integer12",
+    "lessonId": "lesson-08",
+    "statement": "Uch xonali son raqamlarini teskari yozing; boshlang‘ich nol saqlanmaydi.",
+    "inputs": [
+      {
+        "name": "n",
+        "min": 100,
+        "max": 999,
+        "integer": true
+      }
+    ],
+    "formula": "N = birlik·100+o‘nlik·10+yuzlik",
+    "starter": "function solve(n) {\n  // Hisoblang va return bilan natijani qaytaring.\n}",
+    "solution": "function solve(n) {\n  return n%10*100+Math.floor(n/10)%10*10+Math.floor(n/100);\n}",
+    "tests": [
+      {
+        "args": [
+          347
+        ],
+        "expected": 743
+      },
+      {
+        "args": [
+          100
+        ],
+        "expected": 1
+      },
+      {
+        "args": [
+          909
+        ],
+        "expected": 909
+      }
+    ],
+    "steps": [
+      "Berilganlar: n. Qiymatlar va o‘lchov birliklarini yozib oling.",
+      "Formula: N = birlik·100+o‘nlik·10+yuzlik. Har bir amalning tartibini qog‘ozda tekshiring.",
+      "solve funksiyasi kirish qiymatlarini parametr sifatida oladi. Funksiya — nomlangan, qayta chaqiriladigan kod.",
+      "Natijani return orqali qaytaring. Bir nechta natija kerak bo‘lsa [birinchi, ikkinchi] massivini qaytaring.",
+      "Namuna qiymatlarni formulaga qo‘yib qo‘lda hisoblang, so‘ng «Tekshirish»ni bosing.",
+      "Yechimdagi qiymatlarni o‘zgartiring, keyin yechimni yopib kodni mustaqil qayta yozing."
+    ]
+  },
+  {
+    "id": "Integer15",
+    "lessonId": "lesson-08",
+    "statement": "Uch xonali sonning yuzlik va o‘nlik raqamlarini almashtiring.",
+    "inputs": [
+      {
+        "name": "n",
+        "min": 100,
+        "max": 999,
+        "integer": true
+      }
+    ],
+    "formula": "N = o‘nlik·100+yuzlik·10+birlik",
+    "starter": "function solve(n) {\n  // Hisoblang va return bilan natijani qaytaring.\n}",
+    "solution": "function solve(n) {\n  return Math.floor(n/10)%10*100+Math.floor(n/100)*10+n%10;\n}",
+    "tests": [
+      {
+        "args": [
+          347
+        ],
+        "expected": 437
+      },
+      {
+        "args": [
+          100
+        ],
+        "expected": 10
+      },
+      {
+        "args": [
+          999
+        ],
+        "expected": 999
+      }
+    ],
+    "steps": [
+      "Berilganlar: n. Qiymatlar va o‘lchov birliklarini yozib oling.",
+      "Formula: N = o‘nlik·100+yuzlik·10+birlik. Har bir amalning tartibini qog‘ozda tekshiring.",
+      "solve funksiyasi kirish qiymatlarini parametr sifatida oladi. Funksiya — nomlangan, qayta chaqiriladigan kod.",
+      "Natijani return orqali qaytaring. Bir nechta natija kerak bo‘lsa [birinchi, ikkinchi] massivini qaytaring.",
+      "Namuna qiymatlarni formulaga qo‘yib qo‘lda hisoblang, so‘ng «Tekshirish»ni bosing.",
+      "Yechimdagi qiymatlarni o‘zgartiring, keyin yechimni yopib kodni mustaqil qayta yozing."
+    ]
+  },
+  {
+    "id": "Boolean1",
+    "lessonId": "lesson-09",
+    "statement": "A musbatmi?",
+    "inputs": [
+      {
+        "name": "A",
+        "integer": true
+      }
+    ],
+    "formula": "A > 0",
+    "starter": "function solve(A) {\n  // Hisoblang va return bilan natijani qaytaring.\n}",
+    "solution": "function solve(A) {\n  return A>0;\n}",
+    "tests": [
+      {
+        "args": [
+          1
+        ],
+        "expected": true
+      },
+      {
+        "args": [
+          0
+        ],
+        "expected": false
+      },
+      {
+        "args": [
+          -1
+        ],
+        "expected": false
+      }
+    ],
+    "steps": [
+      "Berilganlar: A. Qiymatlar va o‘lchov birliklarini yozib oling.",
+      "Formula: A > 0. Har bir amalning tartibini qog‘ozda tekshiring.",
+      "solve funksiyasi kirish qiymatlarini parametr sifatida oladi. Funksiya — nomlangan, qayta chaqiriladigan kod.",
+      "Natijani return orqali qaytaring. Bir nechta natija kerak bo‘lsa [birinchi, ikkinchi] massivini qaytaring.",
+      "Namuna qiymatlarni formulaga qo‘yib qo‘lda hisoblang, so‘ng «Tekshirish»ni bosing.",
+      "Yechimdagi qiymatlarni o‘zgartiring, keyin yechimni yopib kodni mustaqil qayta yozing."
+    ]
+  },
+  {
+    "id": "Boolean2",
+    "lessonId": "lesson-09",
+    "statement": "A toqmi?",
+    "inputs": [
+      {
+        "name": "A",
+        "integer": true
+      }
+    ],
+    "formula": "A % 2 ≠ 0",
+    "starter": "function solve(A) {\n  // Hisoblang va return bilan natijani qaytaring.\n}",
+    "solution": "function solve(A) {\n  return A%2!==0;\n}",
+    "tests": [
+      {
+        "args": [
+          3
+        ],
+        "expected": true
+      },
+      {
+        "args": [
+          0
+        ],
+        "expected": false
+      },
+      {
+        "args": [
+          -3
+        ],
+        "expected": true
+      },
+      {
+        "args": [
+          4
+        ],
+        "expected": false
+      }
+    ],
+    "steps": [
+      "Berilganlar: A. Qiymatlar va o‘lchov birliklarini yozib oling.",
+      "Formula: A % 2 ≠ 0. Har bir amalning tartibini qog‘ozda tekshiring.",
+      "solve funksiyasi kirish qiymatlarini parametr sifatida oladi. Funksiya — nomlangan, qayta chaqiriladigan kod.",
+      "Natijani return orqali qaytaring. Bir nechta natija kerak bo‘lsa [birinchi, ikkinchi] massivini qaytaring.",
+      "Namuna qiymatlarni formulaga qo‘yib qo‘lda hisoblang, so‘ng «Tekshirish»ni bosing.",
+      "Yechimdagi qiymatlarni o‘zgartiring, keyin yechimni yopib kodni mustaqil qayta yozing."
+    ]
+  },
+  {
+    "id": "Boolean3",
+    "lessonId": "lesson-09",
+    "statement": "A juftmi?",
+    "inputs": [
+      {
+        "name": "A",
+        "integer": true
+      }
+    ],
+    "formula": "A % 2 = 0",
+    "starter": "function solve(A) {\n  // Hisoblang va return bilan natijani qaytaring.\n}",
+    "solution": "function solve(A) {\n  return A%2===0;\n}",
+    "tests": [
+      {
+        "args": [
+          4
+        ],
+        "expected": true
+      },
+      {
+        "args": [
+          0
+        ],
+        "expected": true
+      },
+      {
+        "args": [
+          -2
+        ],
+        "expected": true
+      },
+      {
+        "args": [
+          3
+        ],
+        "expected": false
+      }
+    ],
+    "steps": [
+      "Berilganlar: A. Qiymatlar va o‘lchov birliklarini yozib oling.",
+      "Formula: A % 2 = 0. Har bir amalning tartibini qog‘ozda tekshiring.",
+      "solve funksiyasi kirish qiymatlarini parametr sifatida oladi. Funksiya — nomlangan, qayta chaqiriladigan kod.",
+      "Natijani return orqali qaytaring. Bir nechta natija kerak bo‘lsa [birinchi, ikkinchi] massivini qaytaring.",
+      "Namuna qiymatlarni formulaga qo‘yib qo‘lda hisoblang, so‘ng «Tekshirish»ni bosing.",
+      "Yechimdagi qiymatlarni o‘zgartiring, keyin yechimni yopib kodni mustaqil qayta yozing."
+    ]
+  },
+  {
+    "id": "Boolean4",
+    "lessonId": "lesson-09",
+    "statement": "A > 2 va B ≤ 3 sharti rostmi?",
+    "inputs": [
+      {
+        "name": "A",
+        "integer": true
+      },
+      {
+        "name": "B",
+        "integer": true
+      }
+    ],
+    "formula": "A > 2 ∧ B ≤ 3",
+    "starter": "function solve(A, B) {\n  // Hisoblang va return bilan natijani qaytaring.\n}",
+    "solution": "function solve(A, B) {\n  return A>2&&B<=3;\n}",
+    "tests": [
+      {
+        "args": [
+          3,
+          3
+        ],
+        "expected": true
+      },
+      {
+        "args": [
+          2,
+          3
+        ],
+        "expected": false
+      },
+      {
+        "args": [
+          3,
+          4
+        ],
+        "expected": false
+      },
+      {
+        "args": [
+          -1,
+          0
+        ],
+        "expected": false
+      }
+    ],
+    "steps": [
+      "Berilganlar: A, B. Qiymatlar va o‘lchov birliklarini yozib oling.",
+      "Formula: A > 2 ∧ B ≤ 3. Har bir amalning tartibini qog‘ozda tekshiring.",
+      "solve funksiyasi kirish qiymatlarini parametr sifatida oladi. Funksiya — nomlangan, qayta chaqiriladigan kod.",
+      "Natijani return orqali qaytaring. Bir nechta natija kerak bo‘lsa [birinchi, ikkinchi] massivini qaytaring.",
+      "Namuna qiymatlarni formulaga qo‘yib qo‘lda hisoblang, so‘ng «Tekshirish»ni bosing.",
+      "Yechimdagi qiymatlarni o‘zgartiring, keyin yechimni yopib kodni mustaqil qayta yozing."
+    ]
+  },
+  {
+    "id": "Boolean5",
+    "lessonId": "lesson-09",
+    "statement": "A ≥ 0 yoki B < −2 sharti rostmi?",
+    "inputs": [
+      {
+        "name": "A",
+        "integer": true
+      },
+      {
+        "name": "B",
+        "integer": true
+      }
+    ],
+    "formula": "A ≥ 0 ∨ B < −2",
+    "starter": "function solve(A, B) {\n  // Hisoblang va return bilan natijani qaytaring.\n}",
+    "solution": "function solve(A, B) {\n  return A>=0||B < -2;\n}",
+    "tests": [
+      {
+        "args": [
+          0,
+          0
+        ],
+        "expected": true
+      },
+      {
+        "args": [
+          -1,
+          -3
+        ],
+        "expected": true
+      },
+      {
+        "args": [
+          -1,
+          -2
+        ],
+        "expected": false
+      }
+    ],
+    "steps": [
+      "Berilganlar: A, B. Qiymatlar va o‘lchov birliklarini yozib oling.",
+      "Formula: A ≥ 0 ∨ B < −2. Har bir amalning tartibini qog‘ozda tekshiring.",
+      "solve funksiyasi kirish qiymatlarini parametr sifatida oladi. Funksiya — nomlangan, qayta chaqiriladigan kod.",
+      "Natijani return orqali qaytaring. Bir nechta natija kerak bo‘lsa [birinchi, ikkinchi] massivini qaytaring.",
+      "Namuna qiymatlarni formulaga qo‘yib qo‘lda hisoblang, so‘ng «Tekshirish»ni bosing.",
+      "Yechimdagi qiymatlarni o‘zgartiring, keyin yechimni yopib kodni mustaqil qayta yozing."
+    ]
+  },
+  {
+    "id": "Boolean6",
+    "lessonId": "lesson-10",
+    "statement": "A ≤ B ≤ C sharti rostmi?",
+    "inputs": [
+      {
+        "name": "A",
+        "integer": true
+      },
+      {
+        "name": "B",
+        "integer": true
+      },
+      {
+        "name": "C",
+        "integer": true
+      }
+    ],
+    "formula": "A ≤ B ∧ B ≤ C",
+    "starter": "function solve(A, B, C) {\n  // Hisoblang va return bilan natijani qaytaring.\n}",
+    "solution": "function solve(A, B, C) {\n  return A<=B&&B<=C;\n}",
+    "tests": [
+      {
+        "args": [
+          1,
+          2,
+          3
+        ],
+        "expected": true
+      },
+      {
+        "args": [
+          0,
+          0,
+          0
+        ],
+        "expected": true
+      },
+      {
+        "args": [
+          3,
+          2,
+          1
+        ],
+        "expected": false
+      },
+      {
+        "args": [
+          -3,
+          -2,
+          0
+        ],
+        "expected": true
+      }
+    ],
+    "steps": [
+      "Berilganlar: A, B, C. Qiymatlar va o‘lchov birliklarini yozib oling.",
+      "Formula: A ≤ B ∧ B ≤ C. Har bir amalning tartibini qog‘ozda tekshiring.",
+      "solve funksiyasi kirish qiymatlarini parametr sifatida oladi. Funksiya — nomlangan, qayta chaqiriladigan kod.",
+      "Natijani return orqali qaytaring. Bir nechta natija kerak bo‘lsa [birinchi, ikkinchi] massivini qaytaring.",
+      "Namuna qiymatlarni formulaga qo‘yib qo‘lda hisoblang, so‘ng «Tekshirish»ni bosing.",
+      "Yechimdagi qiymatlarni o‘zgartiring, keyin yechimni yopib kodni mustaqil qayta yozing."
+    ]
+  },
+  {
+    "id": "Boolean7",
+    "lessonId": "lesson-10",
+    "statement": "B soni A va C orasida qat’iy joylashganmi?",
+    "inputs": [
+      {
+        "name": "A",
+        "integer": true
+      },
+      {
+        "name": "B",
+        "integer": true
+      },
+      {
+        "name": "C",
+        "integer": true
+      }
+    ],
+    "formula": "(A < B < C) ∨ (C < B < A)",
+    "starter": "function solve(A, B, C) {\n  // Hisoblang va return bilan natijani qaytaring.\n}",
+    "solution": "function solve(A, B, C) {\n  return (A<B&&B<C)||(C<B&&B<A);\n}",
+    "tests": [
+      {
+        "args": [
+          1,
+          2,
+          3
+        ],
+        "expected": true
+      },
+      {
+        "args": [
+          3,
+          2,
+          1
+        ],
+        "expected": true
+      },
+      {
+        "args": [
+          1,
+          1,
+          3
+        ],
+        "expected": false
+      },
+      {
+        "args": [
+          -3,
+          -2,
+          0
+        ],
+        "expected": true
+      }
+    ],
+    "steps": [
+      "Berilganlar: A, B, C. Qiymatlar va o‘lchov birliklarini yozib oling.",
+      "Formula: (A < B < C) ∨ (C < B < A). Har bir amalning tartibini qog‘ozda tekshiring.",
+      "solve funksiyasi kirish qiymatlarini parametr sifatida oladi. Funksiya — nomlangan, qayta chaqiriladigan kod.",
+      "Natijani return orqali qaytaring. Bir nechta natija kerak bo‘lsa [birinchi, ikkinchi] massivini qaytaring.",
+      "Namuna qiymatlarni formulaga qo‘yib qo‘lda hisoblang, so‘ng «Tekshirish»ni bosing.",
+      "Yechimdagi qiymatlarni o‘zgartiring, keyin yechimni yopib kodni mustaqil qayta yozing."
+    ]
+  },
+  {
+    "id": "Boolean8",
+    "lessonId": "lesson-10",
+    "statement": "A va B ikkalasi ham toqmi?",
+    "inputs": [
+      {
+        "name": "A",
+        "integer": true
+      },
+      {
+        "name": "B",
+        "integer": true
+      }
+    ],
+    "formula": "toq(A) ∧ toq(B)",
+    "starter": "function solve(A, B) {\n  // Hisoblang va return bilan natijani qaytaring.\n}",
+    "solution": "function solve(A, B) {\n  return A%2!==0&&B%2!==0;\n}",
+    "tests": [
+      {
+        "args": [
+          1,
+          3
+        ],
+        "expected": true
+      },
+      {
+        "args": [
+          -1,
+          3
+        ],
+        "expected": true
+      },
+      {
+        "args": [
+          0,
+          3
+        ],
+        "expected": false
+      },
+      {
+        "args": [
+          2,
+          4
+        ],
+        "expected": false
+      }
+    ],
+    "steps": [
+      "Berilganlar: A, B. Qiymatlar va o‘lchov birliklarini yozib oling.",
+      "Formula: toq(A) ∧ toq(B). Har bir amalning tartibini qog‘ozda tekshiring.",
+      "solve funksiyasi kirish qiymatlarini parametr sifatida oladi. Funksiya — nomlangan, qayta chaqiriladigan kod.",
+      "Natijani return orqali qaytaring. Bir nechta natija kerak bo‘lsa [birinchi, ikkinchi] massivini qaytaring.",
+      "Namuna qiymatlarni formulaga qo‘yib qo‘lda hisoblang, so‘ng «Tekshirish»ni bosing.",
+      "Yechimdagi qiymatlarni o‘zgartiring, keyin yechimni yopib kodni mustaqil qayta yozing."
+    ]
+  },
+  {
+    "id": "Boolean9",
+    "lessonId": "lesson-10",
+    "statement": "A va B dan kamida bittasi toqmi?",
+    "inputs": [
+      {
+        "name": "A",
+        "integer": true
+      },
+      {
+        "name": "B",
+        "integer": true
+      }
+    ],
+    "formula": "toq(A) ∨ toq(B)",
+    "starter": "function solve(A, B) {\n  // Hisoblang va return bilan natijani qaytaring.\n}",
+    "solution": "function solve(A, B) {\n  return A%2!==0||B%2!==0;\n}",
+    "tests": [
+      {
+        "args": [
+          1,
+          2
+        ],
+        "expected": true
+      },
+      {
+        "args": [
+          -3,
+          0
+        ],
+        "expected": true
+      },
+      {
+        "args": [
+          0,
+          2
+        ],
+        "expected": false
+      },
+      {
+        "args": [
+          1,
+          3
+        ],
+        "expected": true
+      }
+    ],
+    "steps": [
+      "Berilganlar: A, B. Qiymatlar va o‘lchov birliklarini yozib oling.",
+      "Formula: toq(A) ∨ toq(B). Har bir amalning tartibini qog‘ozda tekshiring.",
+      "solve funksiyasi kirish qiymatlarini parametr sifatida oladi. Funksiya — nomlangan, qayta chaqiriladigan kod.",
+      "Natijani return orqali qaytaring. Bir nechta natija kerak bo‘lsa [birinchi, ikkinchi] massivini qaytaring.",
+      "Namuna qiymatlarni formulaga qo‘yib qo‘lda hisoblang, so‘ng «Tekshirish»ni bosing.",
+      "Yechimdagi qiymatlarni o‘zgartiring, keyin yechimni yopib kodni mustaqil qayta yozing."
+    ]
+  },
+  {
+    "id": "Boolean10",
+    "lessonId": "lesson-10",
+    "statement": "A va B dan faqat bittasi toqmi?",
+    "inputs": [
+      {
+        "name": "A",
+        "integer": true
+      },
+      {
+        "name": "B",
+        "integer": true
+      }
+    ],
+    "formula": "toq(A) ≠ toq(B)",
+    "starter": "function solve(A, B) {\n  // Hisoblang va return bilan natijani qaytaring.\n}",
+    "solution": "function solve(A, B) {\n  return (A%2!==0)!==(B%2!==0);\n}",
+    "tests": [
+      {
+        "args": [
+          1,
+          2
+        ],
+        "expected": true
+      },
+      {
+        "args": [
+          -1,
+          3
+        ],
+        "expected": false
+      },
+      {
+        "args": [
+          0,
+          0
+        ],
+        "expected": false
+      },
+      {
+        "args": [
+          -3,
+          -2
+        ],
+        "expected": true
+      }
+    ],
+    "steps": [
+      "Berilganlar: A, B. Qiymatlar va o‘lchov birliklarini yozib oling.",
+      "Formula: toq(A) ≠ toq(B). Har bir amalning tartibini qog‘ozda tekshiring.",
+      "solve funksiyasi kirish qiymatlarini parametr sifatida oladi. Funksiya — nomlangan, qayta chaqiriladigan kod.",
+      "Natijani return orqali qaytaring. Bir nechta natija kerak bo‘lsa [birinchi, ikkinchi] massivini qaytaring.",
+      "Namuna qiymatlarni formulaga qo‘yib qo‘lda hisoblang, so‘ng «Tekshirish»ni bosing.",
+      "Yechimdagi qiymatlarni o‘zgartiring, keyin yechimni yopib kodni mustaqil qayta yozing."
+    ]
+  },
+  {
+    "id": "For1",
+    "lessonId": "lesson-13",
+    "statement": "k sonini n marta takrorlab massiv qaytaring.",
+    "inputs": [
+      {
+        "name": "k",
+        "integer": false
+      },
+      {
+        "name": "n",
+        "min": 1,
+        "max": 100,
+        "integer": true
+      }
+    ],
+    "formula": "[k, …, k] — n ta element",
+    "starter": "function solve(k, n) {\n  // Hisoblang va return bilan natijani qaytaring.\n}",
+    "solution": "function solve(k, n) {\n  return (()=>{const out=[];for(let i=0;i<n;i++)out.push(k);return out;})();\n}",
+    "tests": [
+      {
+        "args": [
+          7,
+          3
+        ],
+        "expected": [
+          7,
+          7,
+          7
+        ]
+      },
+      {
+        "args": [
+          0,
+          1
+        ],
+        "expected": [
+          0
+        ]
+      },
+      {
+        "args": [
+          -2,
+          4
+        ],
+        "expected": [
+          -2,
+          -2,
+          -2,
+          -2
+        ]
+      }
+    ],
+    "steps": [
+      "Berilganlar: k, n. Qiymatlar va o‘lchov birliklarini yozib oling.",
+      "Formula: [k, …, k] — n ta element. Har bir amalning tartibini qog‘ozda tekshiring.",
+      "solve funksiyasi kirish qiymatlarini parametr sifatida oladi. Funksiya — nomlangan, qayta chaqiriladigan kod.",
+      "Natijani return orqali qaytaring. Bir nechta natija kerak bo‘lsa [birinchi, ikkinchi] massivini qaytaring.",
+      "Namuna qiymatlarni formulaga qo‘yib qo‘lda hisoblang, so‘ng «Tekshirish»ni bosing.",
+      "Yechimdagi qiymatlarni o‘zgartiring, keyin yechimni yopib kodni mustaqil qayta yozing."
+    ]
+  },
+  {
+    "id": "For2",
+    "lessonId": "lesson-13",
+    "statement": "a dan b gacha (chegaralar ham kiradi) sonlarni va sonini [massiv, soni] qaytaring. a ≤ b.",
+    "inputs": [
+      {
+        "name": "a",
+        "integer": true
+      },
+      {
+        "name": "b",
+        "integer": true
+      }
+    ],
+    "formula": "N = b−a+1",
+    "starter": "function solve(a, b) {\n  // Hisoblang va return bilan natijani qaytaring.\n}",
+    "solution": "function solve(a, b) {\n  return (()=>{const out=[];for(let i=a;i<=b;i++)out.push(i);return [out,out.length];})();\n}",
+    "tests": [
+      {
+        "args": [
+          2,
+          5
+        ],
+        "expected": [
+          [
+            2,
+            3,
+            4,
+            5
+          ],
+          4
+        ]
+      },
+      {
+        "args": [
+          0,
+          0
+        ],
+        "expected": [
+          [
+            0
+          ],
+          1
+        ]
+      },
+      {
+        "args": [
+          -2,
+          1
+        ],
+        "expected": [
+          [
+            -2,
+            -1,
+            0,
+            1
+          ],
+          4
+        ]
+      }
+    ],
+    "steps": [
+      "Berilganlar: a, b. Qiymatlar va o‘lchov birliklarini yozib oling.",
+      "Formula: N = b−a+1. Har bir amalning tartibini qog‘ozda tekshiring.",
+      "solve funksiyasi kirish qiymatlarini parametr sifatida oladi. Funksiya — nomlangan, qayta chaqiriladigan kod.",
+      "Natijani return orqali qaytaring. Bir nechta natija kerak bo‘lsa [birinchi, ikkinchi] massivini qaytaring.",
+      "Namuna qiymatlarni formulaga qo‘yib qo‘lda hisoblang, so‘ng «Tekshirish»ni bosing.",
+      "Yechimdagi qiymatlarni o‘zgartiring, keyin yechimni yopib kodni mustaqil qayta yozing."
+    ]
+  },
+  {
+    "id": "For3",
+    "lessonId": "lesson-13",
+    "statement": "a < b. a va b orasidagi sonlarni chegaralarsiz kamayish tartibida massiv qaytaring.",
+    "inputs": [
+      {
+        "name": "a",
+        "integer": true
+      },
+      {
+        "name": "b",
+        "integer": true
+      }
+    ],
+    "formula": "b−1, b−2, …, a+1",
+    "starter": "function solve(a, b) {\n  // Hisoblang va return bilan natijani qaytaring.\n}",
+    "solution": "function solve(a, b) {\n  return (()=>{const out=[];for(let i=b-1;i>a;i--)out.push(i);return out;})();\n}",
+    "tests": [
+      {
+        "args": [
+          1,
+          5
+        ],
+        "expected": [
+          4,
+          3,
+          2
+        ]
+      },
+      {
+        "args": [
+          1,
+          2
+        ],
+        "expected": []
+      },
+      {
+        "args": [
+          -3,
+          1
+        ],
+        "expected": [
+          0,
+          -1,
+          -2
+        ]
+      }
+    ],
+    "steps": [
+      "Berilganlar: a, b. Qiymatlar va o‘lchov birliklarini yozib oling.",
+      "Formula: b−1, b−2, …, a+1. Har bir amalning tartibini qog‘ozda tekshiring.",
+      "solve funksiyasi kirish qiymatlarini parametr sifatida oladi. Funksiya — nomlangan, qayta chaqiriladigan kod.",
+      "Natijani return orqali qaytaring. Bir nechta natija kerak bo‘lsa [birinchi, ikkinchi] massivini qaytaring.",
+      "Namuna qiymatlarni formulaga qo‘yib qo‘lda hisoblang, so‘ng «Tekshirish»ni bosing.",
+      "Yechimdagi qiymatlarni o‘zgartiring, keyin yechimni yopib kodni mustaqil qayta yozing."
+    ]
+  },
+  {
+    "id": "For4",
+    "lessonId": "lesson-13",
+    "statement": "1 kg narxi p. 1–10 kg narxlarini massiv qaytaring.",
+    "inputs": [
+      {
+        "name": "p",
+        "min": 0,
+        "integer": false
+      }
+    ],
+    "formula": "narx = p·kg",
+    "starter": "function solve(p) {\n  // Hisoblang va return bilan natijani qaytaring.\n}",
+    "solution": "function solve(p) {\n  return (()=>{const out=[];for(let i=1;i<=10;i++)out.push(p*i);return out;})();\n}",
+    "tests": [
+      {
+        "args": [
+          1000
+        ],
+        "expected": [
+          1000,
+          2000,
+          3000,
+          4000,
+          5000,
+          6000,
+          7000,
+          8000,
+          9000,
+          10000
+        ]
+      },
+      {
+        "args": [
+          0
+        ],
+        "expected": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "args": [
+          2.5
+        ],
+        "expected": [
+          2.5,
+          5,
+          7.5,
+          10,
+          12.5,
+          15,
+          17.5,
+          20,
+          22.5,
+          25
+        ]
+      }
+    ],
+    "steps": [
+      "Berilganlar: p. Qiymatlar va o‘lchov birliklarini yozib oling.",
+      "Formula: narx = p·kg. Har bir amalning tartibini qog‘ozda tekshiring.",
+      "solve funksiyasi kirish qiymatlarini parametr sifatida oladi. Funksiya — nomlangan, qayta chaqiriladigan kod.",
+      "Natijani return orqali qaytaring. Bir nechta natija kerak bo‘lsa [birinchi, ikkinchi] massivini qaytaring.",
+      "Namuna qiymatlarni formulaga qo‘yib qo‘lda hisoblang, so‘ng «Tekshirish»ni bosing.",
+      "Yechimdagi qiymatlarni o‘zgartiring, keyin yechimni yopib kodni mustaqil qayta yozing."
+    ]
+  },
+  {
+    "id": "For5",
+    "lessonId": "lesson-13",
+    "statement": "1 kg narxi p. 0,1; 0,2; …; 1 kg narxlarini massiv qaytaring.",
+    "inputs": [
+      {
+        "name": "p",
+        "min": 0,
+        "integer": false
+      }
+    ],
+    "formula": "narx = p·i/10, i = 1…10",
+    "starter": "function solve(p) {\n  // Hisoblang va return bilan natijani qaytaring.\n}",
+    "solution": "function solve(p) {\n  return (()=>{const out=[];for(let i=1;i<=10;i++)out.push(p*i/10);return out;})();\n}",
+    "tests": [
+      {
+        "args": [
+          1000
+        ],
+        "expected": [
+          100,
+          200,
+          300,
+          400,
+          500,
+          600,
+          700,
+          800,
+          900,
+          1000
+        ]
+      },
+      {
+        "args": [
+          0
+        ],
+        "expected": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "args": [
+          3.5
+        ],
+        "expected": [
+          0.35,
+          0.7,
+          1.05,
+          1.4,
+          1.75,
+          2.1,
+          2.45,
+          2.8,
+          3.15,
+          3.5
+        ]
+      }
+    ],
+    "steps": [
+      "Berilganlar: p. Qiymatlar va o‘lchov birliklarini yozib oling.",
+      "Formula: narx = p·i/10, i = 1…10. Har bir amalning tartibini qog‘ozda tekshiring.",
+      "solve funksiyasi kirish qiymatlarini parametr sifatida oladi. Funksiya — nomlangan, qayta chaqiriladigan kod.",
+      "Natijani return orqali qaytaring. Bir nechta natija kerak bo‘lsa [birinchi, ikkinchi] massivini qaytaring.",
+      "Namuna qiymatlarni formulaga qo‘yib qo‘lda hisoblang, so‘ng «Tekshirish»ni bosing.",
+      "Yechimdagi qiymatlarni o‘zgartiring, keyin yechimni yopib kodni mustaqil qayta yozing."
+    ]
+  },
+  {
+    "id": "For7",
+    "lessonId": "lesson-14",
+    "statement": "a ≤ b. a dan b gacha butun sonlar yig‘indisini toping.",
+    "inputs": [
+      {
+        "name": "a",
+        "integer": true
+      },
+      {
+        "name": "b",
+        "integer": true
+      }
+    ],
+    "formula": "S = a+(a+1)+…+b",
+    "starter": "function solve(a, b) {\n  // Hisoblang va return bilan natijani qaytaring.\n}",
+    "solution": "function solve(a, b) {\n  return (()=>{let s=0;for(let i=a;i<=b;i++)s+=i;return s;})();\n}",
+    "tests": [
+      {
+        "args": [
+          1,
+          5
+        ],
+        "expected": 15
+      },
+      {
+        "args": [
+          0,
+          0
+        ],
+        "expected": 0
+      },
+      {
+        "args": [
+          -3,
+          2
+        ],
+        "expected": -3
+      }
+    ],
+    "steps": [
+      "Berilganlar: a, b. Qiymatlar va o‘lchov birliklarini yozib oling.",
+      "Formula: S = a+(a+1)+…+b. Har bir amalning tartibini qog‘ozda tekshiring.",
+      "solve funksiyasi kirish qiymatlarini parametr sifatida oladi. Funksiya — nomlangan, qayta chaqiriladigan kod.",
+      "Natijani return orqali qaytaring. Bir nechta natija kerak bo‘lsa [birinchi, ikkinchi] massivini qaytaring.",
+      "Namuna qiymatlarni formulaga qo‘yib qo‘lda hisoblang, so‘ng «Tekshirish»ni bosing.",
+      "Yechimdagi qiymatlarni o‘zgartiring, keyin yechimni yopib kodni mustaqil qayta yozing."
+    ]
+  },
+  {
+    "id": "For8",
+    "lessonId": "lesson-14",
+    "statement": "a ≤ b. a dan b gacha butun sonlar ko‘paytmasini toping.",
+    "inputs": [
+      {
+        "name": "a",
+        "integer": true
+      },
+      {
+        "name": "b",
+        "integer": true
+      }
+    ],
+    "formula": "P = a·(a+1)·…·b",
+    "starter": "function solve(a, b) {\n  // Hisoblang va return bilan natijani qaytaring.\n}",
+    "solution": "function solve(a, b) {\n  return (()=>{let p=1;for(let i=a;i<=b;i++)p*=i;return p;})();\n}",
+    "tests": [
+      {
+        "args": [
+          1,
+          5
+        ],
+        "expected": 120
+      },
+      {
+        "args": [
+          0,
+          2
+        ],
+        "expected": 0
+      },
+      {
+        "args": [
+          -3,
+          -1
+        ],
+        "expected": -6
+      }
+    ],
+    "steps": [
+      "Berilganlar: a, b. Qiymatlar va o‘lchov birliklarini yozib oling.",
+      "Formula: P = a·(a+1)·…·b. Har bir amalning tartibini qog‘ozda tekshiring.",
+      "solve funksiyasi kirish qiymatlarini parametr sifatida oladi. Funksiya — nomlangan, qayta chaqiriladigan kod.",
+      "Natijani return orqali qaytaring. Bir nechta natija kerak bo‘lsa [birinchi, ikkinchi] massivini qaytaring.",
+      "Namuna qiymatlarni formulaga qo‘yib qo‘lda hisoblang, so‘ng «Tekshirish»ni bosing.",
+      "Yechimdagi qiymatlarni o‘zgartiring, keyin yechimni yopib kodni mustaqil qayta yozing."
+    ]
+  },
+  {
+    "id": "For9",
+    "lessonId": "lesson-14",
+    "statement": "a ≤ b. Sonlar kvadratlari yig‘indisini toping.",
+    "inputs": [
+      {
+        "name": "a",
+        "integer": true
+      },
+      {
+        "name": "b",
+        "integer": true
+      }
+    ],
+    "formula": "S = a²+(a+1)²+…+b²",
+    "starter": "function solve(a, b) {\n  // Hisoblang va return bilan natijani qaytaring.\n}",
+    "solution": "function solve(a, b) {\n  return (()=>{let s=0;for(let i=a;i<=b;i++)s+=i*i;return s;})();\n}",
+    "tests": [
+      {
+        "args": [
+          1,
+          3
+        ],
+        "expected": 14
+      },
+      {
+        "args": [
+          0,
+          0
+        ],
+        "expected": 0
+      },
+      {
+        "args": [
+          -2,
+          2
+        ],
+        "expected": 10
+      }
+    ],
+    "steps": [
+      "Berilganlar: a, b. Qiymatlar va o‘lchov birliklarini yozib oling.",
+      "Formula: S = a²+(a+1)²+…+b². Har bir amalning tartibini qog‘ozda tekshiring.",
+      "solve funksiyasi kirish qiymatlarini parametr sifatida oladi. Funksiya — nomlangan, qayta chaqiriladigan kod.",
+      "Natijani return orqali qaytaring. Bir nechta natija kerak bo‘lsa [birinchi, ikkinchi] massivini qaytaring.",
+      "Namuna qiymatlarni formulaga qo‘yib qo‘lda hisoblang, so‘ng «Tekshirish»ni bosing.",
+      "Yechimdagi qiymatlarni o‘zgartiring, keyin yechimni yopib kodni mustaqil qayta yozing."
+    ]
+  },
+  {
+    "id": "For10",
+    "lessonId": "lesson-14",
+    "statement": "n ta hadli garmonik yig‘indini toping.",
+    "inputs": [
+      {
+        "name": "n",
+        "min": 1,
+        "max": 1000,
+        "integer": true
+      }
+    ],
+    "formula": "S = 1+1/2+…+1/n",
+    "starter": "function solve(n) {\n  // Hisoblang va return bilan natijani qaytaring.\n}",
+    "solution": "function solve(n) {\n  return (()=>{let s=0;for(let i=1;i<=n;i++)s+=1/i;return s;})();\n}",
+    "tests": [
+      {
+        "args": [
+          1
+        ],
+        "expected": 1
+      },
+      {
+        "args": [
+          5
+        ],
+        "expected": 2.283333333333333
+      },
+      {
+        "args": [
+          10
+        ],
+        "expected": 2.9289682539682538
+      }
+    ],
+    "steps": [
+      "Berilganlar: n. Qiymatlar va o‘lchov birliklarini yozib oling.",
+      "Formula: S = 1+1/2+…+1/n. Har bir amalning tartibini qog‘ozda tekshiring.",
+      "solve funksiyasi kirish qiymatlarini parametr sifatida oladi. Funksiya — nomlangan, qayta chaqiriladigan kod.",
+      "Natijani return orqali qaytaring. Bir nechta natija kerak bo‘lsa [birinchi, ikkinchi] massivini qaytaring.",
+      "Namuna qiymatlarni formulaga qo‘yib qo‘lda hisoblang, so‘ng «Tekshirish»ni bosing.",
+      "Yechimdagi qiymatlarni o‘zgartiring, keyin yechimni yopib kodni mustaqil qayta yozing."
+    ]
+  },
+  {
+    "id": "For12",
+    "lessonId": "lesson-14",
+    "statement": "1,1 dan boshlab 0,1 qadamli n ta had ko‘paytmasini toping.",
+    "inputs": [
+      {
+        "name": "n",
+        "min": 1,
+        "max": 100,
+        "integer": true
+      }
+    ],
+    "formula": "P = ∏(1+i/10), i=1…n",
+    "starter": "function solve(n) {\n  // Hisoblang va return bilan natijani qaytaring.\n}",
+    "solution": "function solve(n) {\n  return (()=>{let p=1;for(let i=1;i<=n;i++)p*=1+i/10;return p;})();\n}",
+    "tests": [
+      {
+        "args": [
+          1
+        ],
+        "expected": 1.1
+      },
+      {
+        "args": [
+          3
+        ],
+        "expected": 1.7160000000000002
+      },
+      {
+        "args": [
+          10
+        ],
+        "expected": 67.04425728
+      }
+    ],
+    "steps": [
+      "Berilganlar: n. Qiymatlar va o‘lchov birliklarini yozib oling.",
+      "Formula: P = ∏(1+i/10), i=1…n. Har bir amalning tartibini qog‘ozda tekshiring.",
+      "solve funksiyasi kirish qiymatlarini parametr sifatida oladi. Funksiya — nomlangan, qayta chaqiriladigan kod.",
+      "Natijani return orqali qaytaring. Bir nechta natija kerak bo‘lsa [birinchi, ikkinchi] massivini qaytaring.",
+      "Namuna qiymatlarni formulaga qo‘yib qo‘lda hisoblang, so‘ng «Tekshirish»ni bosing.",
+      "Yechimdagi qiymatlarni o‘zgartiring, keyin yechimni yopib kodni mustaqil qayta yozing."
+    ]
+  },
+  {
+    "id": "For15",
+    "lessonId": "lesson-14",
+    "statement": "a ning n-darajasini sikl orqali toping.",
+    "inputs": [
+      {
+        "name": "a",
+        "integer": false
+      },
+      {
+        "name": "n",
+        "min": 0,
+        "max": 100,
+        "integer": true
+      }
+    ],
+    "formula": "aⁿ = a·a·…·a; a⁰ = 1",
+    "starter": "function solve(a, n) {\n  // Hisoblang va return bilan natijani qaytaring.\n}",
+    "solution": "function solve(a, n) {\n  return (()=>{let p=1;for(let i=0;i<n;i++)p*=a;return p;})();\n}",
+    "tests": [
+      {
+        "args": [
+          2,
+          5
+        ],
+        "expected": 32
+      },
+      {
+        "args": [
+          0,
+          3
+        ],
+        "expected": 0
+      },
+      {
+        "args": [
+          -2,
+          3
+        ],
+        "expected": -8
+      },
+      {
+        "args": [
+          5,
+          0
+        ],
+        "expected": 1
+      }
+    ],
+    "steps": [
+      "Berilganlar: a, n. Qiymatlar va o‘lchov birliklarini yozib oling.",
+      "Formula: aⁿ = a·a·…·a; a⁰ = 1. Har bir amalning tartibini qog‘ozda tekshiring.",
+      "solve funksiyasi kirish qiymatlarini parametr sifatida oladi. Funksiya — nomlangan, qayta chaqiriladigan kod.",
+      "Natijani return orqali qaytaring. Bir nechta natija kerak bo‘lsa [birinchi, ikkinchi] massivini qaytaring.",
+      "Namuna qiymatlarni formulaga qo‘yib qo‘lda hisoblang, so‘ng «Tekshirish»ni bosing.",
+      "Yechimdagi qiymatlarni o‘zgartiring, keyin yechimni yopib kodni mustaqil qayta yozing."
+    ]
+  }
+]

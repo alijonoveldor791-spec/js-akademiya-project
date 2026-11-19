@@ -1,0 +1,122 @@
+[
+  {
+    "number": 1,
+    "title": "JavaScriptga kirish",
+    "lessonIds": [
+      "lesson-01",
+      "lesson-02",
+      "lesson-03",
+      "lesson-04"
+    ]
+  },
+  {
+    "number": 2,
+    "title": "Amallar va sonlar",
+    "lessonIds": [
+      "lesson-05",
+      "lesson-06",
+      "lesson-07",
+      "lesson-08"
+    ]
+  },
+  {
+    "number": 3,
+    "title": "Shartlar va mantiq",
+    "lessonIds": [
+      "lesson-09",
+      "lesson-10",
+      "lesson-11",
+      "lesson-12"
+    ]
+  },
+  {
+    "number": 4,
+    "title": "Sikllar",
+    "lessonIds": [
+      "lesson-13",
+      "lesson-14",
+      "lesson-15",
+      "lesson-16"
+    ]
+  },
+  {
+    "number": 5,
+    "title": "Funksiya va massivlar",
+    "lessonIds": [
+      "lesson-17",
+      "lesson-18",
+      "lesson-19",
+      "lesson-20"
+    ]
+  },
+  {
+    "number": 6,
+    "title": "Matn, obyekt, JSON",
+    "lessonIds": [
+      "lesson-21",
+      "lesson-22",
+      "lesson-23",
+      "lesson-24"
+    ]
+  },
+  {
+    "number": 7,
+    "title": "HTML va DOM",
+    "lessonIds": [
+      "lesson-25",
+      "lesson-26",
+      "lesson-27",
+      "lesson-28"
+    ]
+  },
+  {
+    "number": 8,
+    "title": "Formalar va saqlash",
+    "lessonIds": [
+      "lesson-29",
+      "lesson-30",
+      "lesson-31",
+      "lesson-32"
+    ]
+  },
+  {
+    "number": 9,
+    "title": "Zamonaviy JavaScript",
+    "lessonIds": [
+      "lesson-33",
+      "lesson-34",
+      "lesson-35",
+      "lesson-36"
+    ]
+  },
+  {
+    "number": 10,
+    "title": "API va asinxronlik",
+    "lessonIds": [
+      "lesson-37",
+      "lesson-38",
+      "lesson-39",
+      "lesson-40"
+    ]
+  },
+  {
+    "number": 11,
+    "title": "Test ilovasi",
+    "lessonIds": [
+      "lesson-41",
+      "lesson-42",
+      "lesson-43",
+      "lesson-44"
+    ]
+  },
+  {
+    "number": 12,
+    "title": "Yakuniy loyiha",
+    "lessonIds": [
+      "lesson-45",
+      "lesson-46",
+      "lesson-47",
+      "lesson-48"
+    ]
+  }
+]
