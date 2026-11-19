@@ -1,4 +1,4 @@
-﻿# JavaScript Akademiya
+# JavaScript Akademiya
 
 O‘zbekcha mustaqil ta’lim platformasi: **6 tayyorgarlik darsi + 48 asosiy dars**, 45 algoritmik masala va 270 mini-test savoli. Vite va oddiy JavaScript bilan yozilgan.
 
