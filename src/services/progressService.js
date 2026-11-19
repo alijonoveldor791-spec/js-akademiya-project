@@ -10,12 +10,14 @@ export function recordFor(state,id){
   record.contentVersion=lesson.schemaVersion;
   state.completed=state.completed.filter(item=>item!==id);state.setupChecks[id]=[];
  }
- record.practice=[...new Set(record.practice.filter(x=>Number.isInteger(x)&&x>=0&&x<(lesson?.practices.length||3)))];
+ record.practice=lesson?.week===0?[]:[...new Set(record.practice.filter(x=>Number.isInteger(x)&&x>=0&&x<(lesson?.practices?.length??3)))];
  if(!Number.isFinite(Date.parse(record.startedAt)))record.startedAt=new Date().toISOString();
- if(record.quiz){
+ if(lesson?.week===0){
+  record.quiz=null;
+ }else if(record.quiz){
   const q=record.quiz;
-  if(!Array.isArray(q.answers)||q.answers.length!==(lesson?.quiz.length||5)||!q.answers.every((x,i)=>Number.isInteger(x)&&x>=0&&x<(lesson?.quiz[i]?.options.length||3)))record.quiz=null;
-  else q.score=Math.min(lesson?.quiz.length||5,Math.max(0,Number(q.score)||0));
+  if(!Array.isArray(q.answers)||q.answers.length!==(lesson?.quiz?.length??5)||!q.answers.every((x,i)=>Number.isInteger(x)&&x>=0&&x<(lesson?.quiz?.[i]?.options?.length??3)))record.quiz=null;
+  else q.score=Math.min(lesson?.quiz?.length??5,Math.max(0,Number(q.score)||0));
  }
  return record;
 }
@@ -35,6 +37,15 @@ export function completionAllowed(state,lesson){
  return record.practice.length>=lesson.practices.length&&(record.quiz?.score||0)>=Math.ceil(lesson.quiz.length*0.8)&&lesson.exerciseIds.every(id=>state.exerciseResults[id]?.passed);
 }
 export function mastery(state,lesson){
+ if(lesson.week===0){
+  if(state.completed.includes(lesson.id))return 100;
+  const checks=Array.isArray(state.setupChecks[lesson.id])?state.setupChecks[lesson.id]:[];
+  const total=lesson.checks?.length||0;
+  if(!total)return 0;
+  const done=checks.filter(x=>Number.isInteger(x)&&x>=0&&x<total).length;
+  const pct=Math.round((done/total)*100);
+  return setupReady(state,lesson)?pct:Math.min(90,pct);
+ }
  const record=recordFor(state,lesson.id);
  const practice=record.practice.length/lesson.practices.length;
  const quiz=(record.quiz?.score||0)/lesson.quiz.length;

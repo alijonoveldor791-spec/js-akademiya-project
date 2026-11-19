@@ -1,10 +1,23 @@
 const KEY='js-akademiya-progress-v1';
-const EMPTY={completed:[],notes:{},drafts:{},theme:'dark',lastLesson:'setup-01',records:{},exerciseDrafts:{},exerciseResults:{},setupChecks:{},versions:{node:'',npm:''},videoProgress:{},labStorage:{},positions:{}};
+const EMPTY={completed:[],notes:{},drafts:{},theme:'dark',pace:'standard',curriculumView:'modules',profile:{fullName:'',goal:'',bio:'',avatar:''},lastLesson:'setup-01',records:{},exerciseDrafts:{},exerciseResults:{},setupChecks:{},versions:{node:'',npm:''},videoProgress:{},labStorage:{},positions:{}};
 const map=x=>x&&typeof x==='object'&&!Array.isArray(x)?Object.fromEntries(Object.entries(x).filter(([k])=>!['__proto__','constructor','prototype'].includes(k))):{};
+function normalizeProfile(raw){
+ const p=raw&&typeof raw==='object'&&!Array.isArray(raw)?raw:{};
+ const avatar=typeof p.avatar==='string'&&/^data:image\/(?:png|jpeg|webp);base64,[A-Za-z0-9+/=]+$/.test(p.avatar)&&p.avatar.length<=600000?p.avatar:'';
+ return {
+  fullName:typeof p.fullName==='string'?p.fullName.slice(0,80):'',
+  goal:typeof p.goal==='string'?p.goal.slice(0,120):'',
+  bio:typeof p.bio==='string'?p.bio.slice(0,300):'',
+  avatar
+ };
+}
 export function normalizeState(value={}){
  const result=structuredClone(EMPTY);
  result.completed=Array.isArray(value.completed)?[...new Set(value.completed.filter(x=>typeof x==='string'&&/^(lesson|setup)-\d{2}$/.test(x)))]:[];
  result.theme=value.theme==='light'?'light':'dark';
+ result.pace=value.pace==='fast'?'fast':'standard';
+ result.curriculumView=value.curriculumView==='weeks'?'weeks':'modules';
+ result.profile=normalizeProfile(value.profile);
  if(typeof value.lastLesson==='string'&&/^(lesson|setup)-\d{2}$/.test(value.lastLesson))result.lastLesson=value.lastLesson;
  for(const key of ['notes','drafts','exerciseDrafts'])result[key]=Object.fromEntries(Object.entries(map(value[key])).filter(([,v])=>typeof v==='string'));
  for(const key of ['records','exerciseResults','setupChecks','versions','videoProgress','labStorage','positions'])result[key]=map(value[key]);

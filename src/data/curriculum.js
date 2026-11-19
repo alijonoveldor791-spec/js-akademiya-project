@@ -51,11 +51,21 @@ export const mainLessons=original.map((lesson,i)=>{
   ...(lesson.id==='lesson-04'?{...lesson04,lineExplanations:source.code.split('\n').map((code,j)=>({line:j+1,code,explanation:finalLines[j]}))}:{}),
  };
 });
-export const lessons=[...setupLessons.map((l,i)=>({...l,schemaVersion:2,intro:l.concept,principle:l.explain,exerciseIds:[],homework:[],lineExplanations:l.code.split('\n').map((code,j)=>({line:j+1,code,explanation:explainLine(code)})),
- practices:[{level:'Oson',task:l.practice},{level:'O‘rta',task:'Bosqichlarni ko‘rsatmasiz qayta bajaring va natijani qaydlarga yozing.'},{level:'Murakkab',task:`Mini-vazifa: ${l.checks.join('; ')}. Boshqa o‘quvchiga bajarish tartibini tushuntiring.`}],
+export const lessons=[...setupLessons.map((l,i)=>({
+ ...l,
+ schemaVersion:2,
+ intro:l.concept,
+ principle:l.explain,
+ exerciseIds:[],
+ homework:[],
+ practice:'',
+ home:'',
+ practices:[],
+ quiz:[],
+ lineExplanations:l.code.split('\n').map((code,j)=>({line:j+1,code,explanation:explainLine(code)})),
  bug:{code:'console.lgo("Salom");',hint:'Konsolga chiqarish metodining nomi log. Harflar tartibini tekshiring.'},
- expectedExample:{expression:'2 + 3',result:'5'},quiz:i===0?l.quiz:makeQuiz([l.concept,l.explain,'2 + 3','5','console.lgo("Salom");',l.practice,l.webUse],l.code,l.check).map((q,j)=>j===0?{...q,question:l.quiz[0],options:l.quiz.slice(1),answer:0,explanation:l.concept}:q),
- ...(i===0?l:{})
+ expectedExample:{expression:'2 + 3',result:'5'},
+ ...(i===0?{...l,exerciseIds:[],homework:[],practice:'',home:'',practices:[],quiz:[]}:{})
 })),...mainLessons];
 export const weeks=[{number:0,title:'Dasturlashga tayyorgarlik',lessonIds:setupLessons.map(x=>x.id)},...originalWeeks];
 export const exercises=exerciseBank;

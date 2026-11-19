@@ -23,8 +23,14 @@ test('all 54 lessons navigate and expose their quiz questions and practices',asy
  for(const lesson of lessons){
   await page.evaluate(id=>{location.hash='#/'+id;},lesson.id);
   await expect(page.locator('#title')).toHaveText(lesson.title);
-  await expect(page.locator('#practiceTasks input')).toHaveCount(lesson.practices.length);
-  await expect(page.locator('#quizPanel fieldset')).toHaveCount(lesson.quiz.length);
+  if(lesson.week===0){
+   await expect(page.locator('[data-tab="practice"]')).toBeHidden();
+   await expect(page.locator('[data-tab="exercise"]')).toBeHidden();
+   await expect(page.locator('[data-tab="quiz"]')).toBeHidden();
+  }else{
+   await expect(page.locator('#practiceTasks input')).toHaveCount(lesson.practices.length);
+   await expect(page.locator('#quizPanel fieldset')).toHaveCount(lesson.quiz.length);
+  }
  }
  expect(errors).toEqual([]);
 });
@@ -81,9 +87,10 @@ test('quiz feedback, mastery, notes, theme and last lesson survive reload',async
 });
 test('export and import restore progress and malformed files give an error',async({page})=>{
  await page.goto('/#/lesson-08');await page.locator('[data-tab="notes"]').click();await page.locator('#notes').fill('Eksport sinovi');
- const downloadPromise=page.waitForEvent('download');await page.locator('#exportBtn').click();const download=await downloadPromise;const path=await download.path();expect(path).toBeTruthy();
- await page.locator('#notes').fill('O‘zgargan');await page.locator('#importFile').setInputFiles(path);await expect(page.locator('#notes')).toHaveValue('Eksport sinovi');
- await page.locator('#importFile').setInputFiles({name:'wrong.json',mimeType:'application/json',buffer:Buffer.from('{"completed":null}')});await expect(page.locator('#toast')).toContainText('Import xatosi');
+ await page.locator('#navProfileBtn').click();
+ const downloadPromise=page.waitForEvent('download');await page.locator('#navExportBtn').click();const download=await downloadPromise;const path=await download.path();expect(path).toBeTruthy();
+ await page.locator('#notes').fill('O‘zgargan');await page.locator('#navImportFile').setInputFiles(path);await expect(page.locator('#notes')).toHaveValue('Eksport sinovi');
+ await page.locator('#navImportFile').setInputFiles({name:'wrong.json',mimeType:'application/json',buffer:Buffer.from('{"completed":null}')});await expect(page.locator('#toast')).toContainText('Import xatosi');
 });
 test('mobile layout, navigation search and absent-video message',async({page})=>{
  await page.setViewportSize({width:390,height:844});await page.goto('/');expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);

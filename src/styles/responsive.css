@@ -1,0 +1,251 @@
+@media (max-width: 1360px) {
+  .nav-search-text {
+    display: none;
+  }
+
+  .nav-links {
+    gap: 14px;
+  }
+}
+
+@media (max-width: 1260px) {
+  .learn-main-grid {
+    grid-template-columns: minmax(0, 1fr);
+    padding: 20px 22px 40px;
+  }
+
+  .outline-mobile-btn {
+    display: inline-flex;
+  }
+
+  .lesson-outline {
+    display: none;
+  }
+
+  .lesson-outline.is-mobile-open {
+    display: block;
+    margin-top: 8px;
+  }
+
+  .outline-sticky {
+    position: static;
+  }
+}
+
+@media (max-width: 1200px) {
+  .nav-links,
+  .nav-back-home,
+  .nav-continue-btn {
+    display: none;
+  }
+
+  .nav-mobile-btn {
+    display: inline-flex;
+  }
+
+  .weeks-grid,
+  .weeks-grid-fast {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 1000px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 60;
+    width: min(320px, 86vw);
+    transform: translateX(-105%);
+    transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 16px 0 48px rgba(0, 0, 0, 0.45);
+  }
+
+  .sidebar-open .sidebar {
+    transform: translateX(0);
+  }
+
+  .menu-button,
+  .sidebar-close-btn {
+    display: inline-flex;
+  }
+
+  .home-hero-grid,
+  .home-lab-card,
+  .ui-course-card,
+  .dashboard-columns,
+  .author-layout,
+  .site-footer-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .home-stats-grid,
+  .dashboard-stats-grid,
+  .feature-grid,
+  .process-grid,
+  .roadmap-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .about-grid,
+  .author-projects-grid,
+  .modules-grid,
+  .glossary-grid,
+  .sim-split,
+  .op-grid,
+  .flow-branches,
+  .fn-machine-grid,
+  .ex-visual-grid,
+  .video-comp-grid,
+  .editorial-showcase-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-card-wide {
+    grid-column: span 1;
+  }
+
+  .editorial-logo-card .editorial-media-frame {
+    width: 100%;
+    max-width: 220px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .site-navbar-inner {
+    padding: 0 14px;
+    gap: 8px;
+  }
+
+  .nav-brand-name {
+    font-size: 14.5px;
+  }
+
+  .nav-profile-menu {
+    width: min(268px, calc(100vw - 24px));
+  }
+
+  .home-hero {
+    padding: 28px 16px 28px;
+  }
+
+  .home-stats,
+  .home-section,
+  .page-container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .home-stats-grid,
+  .dashboard-stats-grid,
+  .feature-grid,
+  .process-grid,
+  .weeks-grid,
+  .weeks-grid-fast,
+  .roadmap-grid,
+  .ui-course-facts,
+  .author-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ui-segmented {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .ui-seg-btn {
+    flex: 1;
+  }
+
+  .author-form-full,
+  .profile-field-full {
+    grid-column: span 1;
+  }
+
+  .profile-avatar-editor,
+  .profile-fields-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dash-profile-actions,
+  .dash-profile-actions button {
+    width: 100%;
+  }
+
+  .learn-main-grid {
+    padding: 16px 14px 32px;
+  }
+
+  .hero {
+    padding: 22px 18px;
+  }
+
+  .panel {
+    padding: 18px 16px;
+  }
+
+  .editor-top {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .editor-top > div {
+    width: 100%;
+  }
+
+  .editor-top button {
+    flex: 1;
+  }
+
+  .nav-buttons {
+    flex-wrap: wrap;
+  }
+
+  .nav-buttons > span {
+    order: -1;
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  .nav-buttons > button {
+    flex: 1;
+  }
+
+  .metric-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .exercise-actions button {
+    flex: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media (forced-colors: active) {
+  .code-highlight {
+    display: none;
+  }
+
+  .code-editor-shell .editor {
+    color: CanvasText;
+    -webkit-text-fill-color: CanvasText;
+    background: Canvas;
+    caret-color: CanvasText;
+  }
+}
